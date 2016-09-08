@@ -1,0 +1,158 @@
+/*Global Settings*/
+*
+{
+	margin:0;
+	padding:0;
+}
+body
+{
+	background-color:#F0F0B9;
+}
+h1
+{
+	background-color:#3D001F;
+	color:white;
+}
+h3
+{
+	text-indent:5em;
+	margin-bottom:0;
+}
+hr
+{
+	background-color:black;
+	border:0;
+	height:8px;
+	width:100%;
+}
+p
+{
+	margin:1em;
+}
+
+/*Named Elements*/
+#content
+{
+	background-color:#3D001F;
+	border-color:#3D001F;
+	border-style:inset;
+	border-width:.2%;
+	height:100%;
+	margin-left:10%;
+	overflow:hidden;
+	width:89%;
+}
+
+#content div
+{
+	background-color:#F0F0B9;
+	border-color:#F0F0B9;
+	border-style:outset;
+	border-width:.2%;
+	padding-left:1%;
+	width:99.6%;
+}
+
+#footer
+{
+	text-align:center;
+}
+
+#general, #profile
+{
+	text-align:center;
+}
+
+#header, #footer
+{
+	background-color:#3D001F;
+	border-color:#3D001F;
+	border-style:inset;
+	border-width:.2%;
+	color:white;
+	margin-bottom:0;
+	margin-top:0;
+}
+
+#info
+{
+	width:100%;
+}
+
+#info td
+{
+	border-color:#F0F0B9;
+	border-style:outset;
+	border-width:.2%;
+}
+
+#intro p
+{
+	text-align:center;
+}
+
+#menu
+{
+	background-color:black;
+	position:fixed;
+	width:10%;
+}
+
+#menu tr
+{
+	border:2px solid black;
+	height:15px;
+	width:100%;
+}
+
+#menu td
+{
+	background-color:gray;
+	border:0;
+	color:black;
+	height:15px;
+	text-align:center;
+}
+
+/*By Class*/
+.feature_list
+{
+	margin-left: 20px;
+}
+
+.half
+{
+	min-width:49.6%;
+	width:49.6%;
+	background-color:#F0F0B9;
+	border-color:#3D001F;
+	border-width:3px;
+}
+
+.project
+{
+	margin-left: 8em;
+}
+
+.project td
+{
+	text-align:right;
+}
+
+.project td+td
+{
+	text-align:left;
+}
+
+.tier3, .tier4
+{
+	margin-left:10em;
+	margin-right:5em;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+.tier4
+{
+	margin-left:13em;
+}
