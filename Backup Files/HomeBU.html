@@ -1,0 +1,190 @@
+<html>
+	<head>
+		<title>
+			Andrew Rose - Software Developer
+		</title>
+
+		<meta type="description" content="Andrew Rose Professional Webpage Resume" />
+		<meta type="keywords" content="Andrew, Andy, Rose, Computer, Sciences, 
+			HTML, CSS, C#, C++, Java, Developer, Software, Engineer" />
+	
+		<style type="text/css">
+			div{width:100%;background-color:#00FFFF;margin:0;padding:0;
+				border-width:2px;border-style:inset;border-color:#3D001F;}
+			.header{background-color:#3D001F;}
+			.title{margin:0;color:white;}
+			.main{width:100%;height:86%;background-color:#00FFFF;margin:0;padding:0;
+				border-width:2px;border-style:inset;border-color:#3D001F;}
+			.page{border-style:outset;width:98%;height:98%;}
+			.svgNav{height:20px;}
+			.navDrawing{width:120px;height:100%;float:left;}
+			.navBox{fill:#B53375;stroke:#3D001F;stroke-width:5;margin:0;padding:0;width:120px;height:20px;}
+		</style>
+
+		<script type="text/javascript">
+			function isSvgSupported()
+			{
+				var elem = document.createElement('svg');
+				return!!(elem.getContext);
+			}
+		</script>
+	</head>
+
+	<body style="margin:0;padding:0;" onload="loadHome()">
+		<div class="page">
+			<div id="header" class="header">
+				<h1 class="title">
+					Andrew Rose - Software Engineer
+				</h1>
+			</div>
+
+			<div id="menu" class="svgNav">
+				<svg id="menu" width="100%" hight="15px">
+					<svg  x="2" class="navDrawing">
+						<a xlink:href="Main.html" target="mainForm" id="Main" onclick="setNewPage(evt)">
+							<rect id="MainBox" fill="#B53375" stroke="#3D001F" stroke-width="5"
+								x="2" y="0" rx="10" ry="15" width="116" height="20"
+								onmouseover="navOver(evt)" onmouseout="navOut(evt)" />
+							<text id="MainText" x="40" y="15" fill="white" onmouseover="textOver(evt)"
+								onmouseout="textOut(evt)">Home</text>
+						</a>
+					</svg>
+				
+					<svg class="navDrawing">
+						<a xlink:href="Info.html" target="mainForm" id="Info" onclick="setNewPage(evt)">
+							<rect id="InfoBox" fill="#B53375" stroke="#3D001F" stroke-width="5"
+								x="125" y="0" rx="10" ry="15" width="116" height="20"
+								onmouseover="navOver(evt)" onmouseout="navOut(evt)" />
+							<text id="InfoText" x="152" y="15" fill="white" onmouseover="textOver(evt)"
+								onmouseout="textOut(evt)">Info/Skills</text>	
+						</a>
+					</svg>
+					
+					<svg class="navDrawing">
+						<a xlink:href="Work.html" target="mainForm" id="Work" onclick="setNewPage(evt)">
+							<rect id="WorkBox" fill="#B53375" stroke="#3D001F" stroke-width="5"
+								x="246" y="0" rx="10" ry="15" width="116" height="20"
+								onmouseover="navOver(evt)" onmouseout="navOut(evt)" />
+							<text id="WorkText" x="264" y="15" fill="white" onmouseover="textOver(evt)"
+								onmouseout="textOut(evt)">Work History</text>
+						</a>
+					</svg>
+
+					<svg class="navDrawing">
+						<a xlink:href="Projects.html" target="mainForm" id="Projects" onclick="setNewPage(evt)">
+							<rect id="ProjectsBox" fill="#B53375" stroke="#3D001F" stroke-width="5"
+								x="367" y="0" rx="10" ry="15" width="116" height="20"
+								onmouseover="navOver(evt)" onmouseout="navOut(evt)" />
+							<text id="ProjectsText" x="403" y="15" fill="white" onmouseover="textOver(evt)"
+								onmouseout="textOut(evt)">Projects</text>
+						</a>
+					</svg>
+
+					<svg class="navDrawing">
+						<a xlink:href="Papers.html" id="Papers" target="mainForm" id="papers" onclick="setNewPage(evt)">
+							<rect id="PapersBox" fill="#B53375" stroke="#3D001F" stroke-width="5"
+								x="488" y="0" rx="10" ry="15" width="116" height="20"
+								onmouseover="navOver(evt)" onmouseout="navOut(evt)" />
+							<text id="PapersText" x="529" y="15" fill="white" onmouseover="textOver(evt)"
+								onmouseout="textOut(evt)">Papers</text>
+						</a>
+					</svg>
+
+					<script type="application/ecmascript">
+						<![CDATA[
+						var currName = "Main";
+						function loadHome(){
+							currName = "Main";
+							setActiveLink(currName);
+							var form = document.getElementById("form");
+							if (isSvgSupported())
+							{
+								form.setAttribute("src", "Main.html");
+							}
+							else
+							{
+								form.setAttribute("src", "Main-noSvg.html");
+							}
+						}
+						function navOver(evt) {
+				 			var nav = evt.target;
+							nav.setAttribute("stroke", "#E6E62E");
+							nav.setAttribute("fill", "#00FFFF");
+				    		}
+						function navOut(evt){
+							var nav = evt.target;
+							nav.setAttribute("stroke", "#3D001F");
+							nav.setAttribute("fill", "#B53375");	
+						}
+						function textOver(evt){
+				 			var nav = evt.target;
+							var par = nav.parentNode;
+							var bar = par.childNodes.item(1);
+							nav.setAttribute("stroke", "#E6E62E");
+							nav.setAttribute("fill", "#00FFFF");
+							bar.setAttribute("stroke", "#E6E62E");
+							bar.setAttribute("fill", "#00FFFF");						
+						}
+						function textOut(evt){
+				 			var nav = evt.target;
+							var par = nav.parentNode;
+							var bar = par.childNodes.item(1);
+							nav.setAttribute("stroke", "none");
+							nav.setAttribute("fill", "white");
+							bar.setAttribute("stroke", "#3D001F");
+							bar.setAttribute("fill", "#B53375");
+						}
+						function resetLink(name){
+							var box = document.getElementById(name + "Box");
+							box.setAttribute("fill", "#B53375");
+							box.setAttribute("stroke", "#3D001F");
+							box.setAttribute("onmouseover", "navOver(evt)");
+							box.setAttribute("onmouseout", "navOut(evt)");
+
+							var text = document.getElementById(name + "Text");
+							text.setAttribute("fill", "white");
+							text.setAttribute("stroke", "none");
+							text.setAttribute("onmouseover", "textOver(evt)");
+							text.setAttribute("onmouseout", "textOut(evt)");
+						}
+						function setActiveLink(name){
+								var nextBar = document.getElementById(name + "Box");
+								nextBar.setAttribute("stroke", "#E6E62E");
+								nextBar.setAttribute("fill", "#00FFFF");
+								nextBar.setAttribute("onmouseover", "doNothing(evt)");
+								nextBar.setAttribute("onmouseout", "doNothing(evt)");	
+	
+								var nextText = document.getElementById(name + "Text");
+								//alert("child text is " + childText.getAttributeNS(null, 'id'));
+								nextText.setAttribute("stroke", "black");
+								nextText.setAttribute("fill", "white");
+								nextText.setAttribute("onmouseover", "doNothing(evt)");
+								nextText.setAttribute("onmouseout", "doNothing(evt)");
+
+								currName = name;
+						}
+						function setNewPage(evt){
+							var next = evt.target;
+							var parent = next.parentNode;
+							var nextName = parent.getAttributeNS(null, 'id');
+
+							// if loop for clicking the same link
+							if (currName != nextName)
+							{
+								// Reset the previous page link to be normal
+								resetLink(currName);
+								
+								// Set the new link to be active
+								setActiveLink(nextName);
+							}
+						}
+						function doNothing(evt){ var busy = 0;}
+						]]> 
+					</script>
+				</svg>
+			</div>
+			<iframe id="form" name="mainForm" class="main" src="Main.html">
+			</iframe>
+		</div>
+	</body>
+</html>

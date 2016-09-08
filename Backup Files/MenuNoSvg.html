@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styleSheet.css" />
+		<style type="text/css">
+			a{background-color:#B53375;color:#3D001F;}
+			.currentPage{background-color:#E6E62E;color:#B53375;}
+
+			a:link{background-color:#B53375;color:#3D001F;}
+			a:hover{background-color:#B53375;color:yellow;}
+			a:active{background-color:#E6E62E;color:#B53375;}
+
+			.currentPage a:link{background-color:#E6E62E;color:#B53375;}
+			.currentPage a:hover{background-color:#B53375;color:yellow;}
+			.currentPage a:active{background-color:#E6E62E;color:#B53375;}
+		</style>
+	</head>
+	
+	<body style="margin:0;padding:0;">
+		<div id="menuDiv">
+			<a id="home" class="currentPage" href="Main.html" target="mainForm" 
+				onclick="clickLink(event)">
+				Home
+			</a>
+
+			<a id="info" href="Info.html" target="mainForm" onclick="clickLink(event)">
+				Info/Skills
+			</a>
+				
+			<a id="work" href="Work.html" target="mainForm" onclick="clickLink(event)">
+				Work History
+			</a>
+
+			<a id="projects" href="Projects.html" target="mainForm" onclick="clickLink(event)">
+				Projects
+			</a>
+
+			<a id="papers" href="Papers.html" target="mainForm" onclick="clickLink(event)">
+				Papers
+			</a>
+		</div>
+
+		<script type="text/javascript">
+			var prevPage = "home";
+			function clickLink(evt)
+			{
+				var lastPage = document.getElementById(prevPage);
+				lastPage.setAttribute("className", "null");
+				
+				var linkVar = evt.srcElement;
+				linkVar.setAttribute("className", "currentPage");
+				prevPage = linkVar.id;
+			}
+		</script>
+	</body>
+</html>

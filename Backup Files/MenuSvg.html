@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styleSheet.css" />
+		<style>
+			/* Menu element styles */
+			.menuDiv
+			{
+				width:99.7%;
+				background-color:#00FFFF;
+				border-style:none;
+			}
+
+			.navDrawing
+			{
+				width:120px;
+				float:left;
+				margin:0;
+				padding:0;
+			}
+		</style>
+	</head>
+	
+	<body style="margin:0;padding:0;height:99.8%;overflow-y:hidden;overflow-x:hidden;" onLoad="setStart()">
+		<div id="svgMenu" class="menuDiv" style="margin:0;padding:0;" >
+			<a href="Main.html" target="mainForm" name="Main" onclick="setNewPage(event)">
+				<svg  x="2" name="Main" class="navDrawing">
+					<rect id="MainBox" name="Main" fill="#B53375" stroke="#3D001F" stroke-width="5"
+						x="2" y="2" rx="10" ry="15" width="116" height="20"
+						onmouseover="navOver(evt)" onmouseout="navOut(evt)" />
+					<text id="MainText" name="Main" x="40" y="17" fill="white" onmouseover="textOver(evt)"
+						onmouseout="textOut(evt)">Home</text>
+				</svg>
+			</a>
+		
+			<a href="Info.html" target="mainForm" name="Info" onclick="setNewPage(event)">
+				<svg class="navDrawing" name="Info">
+					<rect id="InfoBox" name="Info" fill="#B53375" stroke="#3D001F" stroke-width="5"
+						x="2" y="2" rx="10" ry="15" width="116" height="20"
+						onmouseover="navOver(evt)" onmouseout="navOut(evt)" />
+					<text id="InfoText" name="Info" x="29" y="17" fill="white" onmouseover="textOver(evt)"
+						onmouseout="textOut(evt)">Info/Skills</text>	
+				</svg>
+			</a>
+			
+			<a href="Work.html" target="mainForm" name="Work" onclick="setNewPage(event)">
+				<svg class="navDrawing" name="Work">
+					<rect id="WorkBox" name="Work" fill="#B53375" stroke="#3D001F" stroke-width="5"
+						x="2" y="2" rx="10" ry="15" width="116" height="20"
+						onmouseover="navOver(evt)" onmouseout="navOut(evt)" />
+					<text id="WorkText" name="Work" x="20" y="17" fill="white" onmouseover="textOver(evt)"
+						onmouseout="textOut(evt)">Work History</text>
+				</svg>
+			</a>
+
+
+			<a href="Projects.html" target="mainForm" name="Projects" onclick="setNewPage(event)">
+				<svg class="navDrawing" name="Projects">
+					<rect id="ProjectsBox" name="Projects" fill="#B53375" stroke="#3D001F" stroke-width="5"
+						x="2" y="2" rx="10" ry="15" width="116" height="20"
+						onmouseover="navOver(evt)" onmouseout="navOut(evt)" />
+					<text id="ProjectsText" name="Projects" x="38" y="17" fill="white" onmouseover="textOver(evt)"
+						onmouseout="textOut(evt)">Projects</text>
+				</svg>
+			</a>
+
+			<a href="Papers.html" id="Papers" target="mainForm" name="Papers" onclick="setNewPage(event)">
+				<svg class="navDrawing" name="Papers">
+					<rect id="PapersBox" name="Papers" fill="#B53375" stroke="#3D001F" stroke-width="5"
+						x="2" y="2" rx="10" ry="15" width="114" height="20"
+						onmouseover="navOver(evt)" onmouseout="navOut(evt)" />
+					<text id="PapersText" name="Papers" x="42" y="17" fill="white" onmouseover="textOver(evt)"
+						onmouseout="textOut(evt)">Papers</text>
+				</svg>
+			</a>
+		</div>
+
+		<script type="text/javascript">
+			var currName = "Main";
+			function setStart() {
+				setActiveLink("Main");
+			}
+			function navOver(event) {
+	 			var nav = event.target;
+				nav.setAttribute("stroke", "#E6E62E");
+				nav.setAttribute("fill", "#00FFFF");
+	    		}
+			function navOut(event){
+				var nav = event.target;
+				nav.setAttribute("stroke", "#3D001F");
+				nav.setAttribute("fill", "#B53375");	
+			}
+			function textOver(event){
+	 			var nav = event.target;
+				var par = nav.parentNode;
+				var bar = par.childNodes.item(1);
+				nav.setAttribute("stroke", "#E6E62E");
+				nav.setAttribute("fill", "#00FFFF");
+				bar.setAttribute("stroke", "#E6E62E");
+				bar.setAttribute("fill", "#00FFFF");						
+			}
+			function textOut(event){
+	 			var nav = event.target;
+				var par = nav.parentNode;
+				var bar = par.childNodes.item(1);
+				nav.setAttribute("stroke", "none");
+				nav.setAttribute("fill", "white");
+				bar.setAttribute("stroke", "#3D001F");
+				bar.setAttribute("fill", "#B53375");
+			}
+			function resetLink(name){
+				var box = document.getElementById(name + "Box");
+				box.setAttribute("fill", "#B53375");
+				box.setAttribute("stroke", "#3D001F");
+				box.setAttribute("onmouseover", "navOver(evt)");
+				box.setAttribute("onmouseout", "navOut(evt)");
+				var text = document.getElementById(name + "Text");
+				text.setAttribute("fill", "white");
+				text.setAttribute("stroke", "none");
+				text.setAttribute("onmouseover", "textOver(evt)");
+				text.setAttribute("onmouseout", "textOut(evt)");
+			}
+			function setActiveLink(name){
+				var nextBar = document.getElementById(name + "Box");
+				nextBar.setAttribute("stroke", "#E6E62E");
+				nextBar.setAttribute("fill", "#00FFFF");
+				nextBar.setAttribute("onmouseover", "doNothing(evt)");
+				nextBar.setAttribute("onmouseout", "doNothing(evt)");	
+				var nextText = document.getElementById(name + "Text");
+				nextText.setAttribute("stroke", "black");
+				nextText.setAttribute("fill", "white");
+				nextText.setAttribute("onmouseover", "doNothing(evt)");
+				nextText.setAttribute("onmouseout", "doNothing(evt)");
+				currName = name;
+			}
+			function setNewPage(event){
+				var next = event.target;
+			//	var parent = next.parentNode;
+			//	var nextName = parent.getAttributeNS(null, 'id');
+				var nextNameNew = next.getAttributeNS(null, 'name');
+				// if loop for clicking the same link
+				if (currName != nextNameNew)
+				{
+					// Reset the previous page link to be normal
+					resetLink(currName);
+					
+					// Set the new link to be active
+					setActiveLink(nextNameNew);
+				}
+			}
+			function doNothing(event){ var busy = 0;}
+		</script>
+	</body>
+</html>
