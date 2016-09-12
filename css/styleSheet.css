@@ -1,58 +1,20 @@
 @media screen
 {
-	/* Global element style */
-/* 	div
-	{
-		width:100%;
-		background-color:#F0F0B9;
-		margin:0;
-		padding:0;
-		overflow-x:hidden;
-		border-width:2px;
-		border-style:inset;
-		border-color:#3D001F;
-	} */
-
-/* 	body
-	{
-		margin:0;
-		padding:0;
-		width:99.8%;
-		overflow-x:hidden;
-	} */
-
-	/* iframe
-	{
-	margin:0;
-	padding:0;
-	border-style:outset;
-	} */
-
-/* 	p
-	{
-	margin-left:9em;
-	margin-right:9em;
-	margin-top:1em;
-	margin-bottom:1em;
-	}
- */
-/* 	dt
-	{
-	margin:0;
-	padding:0;
-	}
-
-	dd
-	{
-	margin:0;
-	padding:0;
-	} */
-
 	#navMenu
 	{
-		max-height:50px;
+		height:50px;
 	}
 
+	#info_container
+	{
+		text-align:center;
+	}
+	
+	#skill_container
+	{
+		text-align:center;
+	}
+	
 	.select_wheel
 	{
 		width:60%;
