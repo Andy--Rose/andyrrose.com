@@ -4,13 +4,13 @@
 		<title>
 			Andrew Rose - Software Developer
 		</title>
-
+		
 		<meta type="description" content="Andrew Rose Professional Webpage Resume" />
 		<meta type="keywords" content="Andrew, Andy, Rose, Computer, Science, 
 			HTML, HTML 5, CSS, C#, C++, Java, Developer, Software, Engineer,
 			UI, UX, UI/UX, End-to-End, Database, Web Developer" />
 
-		<link rel="stylesheet" type="text/css" href="styleSheet.css" />
+		<link rel="stylesheet" type="text/css" href="css/styleSheet.css" />
 
 		<link rel="icon" type="image/icon" href="http://www.andyrrose.com/icon.ico" />
 		<link rel="shortcut icon" type="image/icon" href="http://www.andyrrose.com/icon.ico" />
@@ -18,8 +18,8 @@
 
 	<body style="overflow-x:hidden;overflow-y:hidden;" 
 	    onload="loadHome()" onresize="setPageSize()">
-		<div class="page">
-			<div id="header" class="header">
+		<div class="container-fluid">
+<!-- 			<div id="header" class="header">
 				<h1 class="title">
 					Andrew Rose - Software Developer
 				</h1>
@@ -33,10 +33,10 @@
 					<li class="menuObject"><a class="menuLink" href="Projects.html" target="mainForm">Projects</a></li>
 					<li class="menuObject"><a class="menuLink" href="Papers.html" target="mainForm">Papers</a></li>
 				</ul>
-			</div>
+			</div> -->
+			<iframe id="nav_frame" name="navigation" class="navigation" src="Navigation.html"></iframe>
 
-			<iframe id="form" name="mainForm" class="main" src="Main.html">
-			</iframe>
+			<iframe id="form" name="mainForm" class="main" src="Main.html"></iframe>
 		</div>
 
 		<script type="text/javascript">
