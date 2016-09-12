@@ -1,283 +1,288 @@
 @media screen
 {
-/* Global element style */
-div
-{
-width:100%;
-background-color:#F0F0B9;
-margin:0;
-padding:0;
-overflow-x:hidden;
-border-width:2px;
-border-style:inset;
-border-color:#3D001F;
-}
+	/* Global element style */
+/* 	div
+	{
+		width:100%;
+		background-color:#F0F0B9;
+		margin:0;
+		padding:0;
+		overflow-x:hidden;
+		border-width:2px;
+		border-style:inset;
+		border-color:#3D001F;
+	} */
 
-body
-{
-margin:0;
-padding:0;
-width:99.8%;
-overflow-x:hidden;
-}
+/* 	body
+	{
+		margin:0;
+		padding:0;
+		width:99.8%;
+		overflow-x:hidden;
+	} */
 
-/* iframe
-{
-margin:0;
-padding:0;
-border-style:outset;
-} */
+	/* iframe
+	{
+	margin:0;
+	padding:0;
+	border-style:outset;
+	} */
 
-p
-{
-margin-left:9em;
-margin-right:9em;
-margin-top:1em;
-margin-bottom:1em;
-}
+/* 	p
+	{
+	margin-left:9em;
+	margin-right:9em;
+	margin-top:1em;
+	margin-bottom:1em;
+	}
+ */
+/* 	dt
+	{
+	margin:0;
+	padding:0;
+	}
 
-dt
-{
-margin:0;
-padding:0;
-}
+	dd
+	{
+	margin:0;
+	padding:0;
+	} */
 
-dd
-{
-margin:0;
-padding:0;
-}
+	#navMenu
+	{
+		max-height:50px;
+	}
 
-.select_wheel
-{
-	width:60%;
-	margin:0 auto;
-	padding-top:10px;
-	padding-bottom:10px;
-	position:relative;
-	float:right;
-}
+	.select_wheel
+	{
+		width:60%;
+		margin:0 auto;
+		padding-top:10px;
+		padding-bottom:10px;
+		position:relative;
+		float:right;
+	}
 
-.select_wheel > .option
-{
-	width:30px;
-	margin:0 auto;
-	border:0;
-	border-top:2px solid;
-	border-bottom:2px solid;
-	padding:5px;
-	position:relative;
-}
+	.select_wheel > .option
+	{
+		width:30px;
+		margin:0 auto;
+		border:0;
+		border-top:2px solid;
+		border-bottom:2px solid;
+		padding:5px;
+		position:relative;
+	}
 
-.select_wheel_option:hover
-{
-	border:0;
-	border-top:4px solid;
-	border-bottom:4px solid;
-	cursor:pointer;
-}
+	.select_wheel_option:hover
+	{
+		border:0;
+		border-top:4px solid;
+		border-bottom:4px solid;
+		cursor:pointer;
+	}
 
-.select_wheel_option_image
-{
-	width:30px;
-	height:30px;
-}
+	.select_wheel_option_image
+	{
+		width:30px;
+		height:30px;
+	}
 
-/* Home page class settings */
-.header
-{
-width:99.8%;
-height:38px;
-background-color:#3D001F;
-border-style:inset;
-}
-
-.title
-{
-margin:0;
-color:white;
-}
-
-ul
-{
-margin:0;
-padding-top:0;
-}
-
-ul.menu
-{
-list-style-type:none;
-padding:0;
-}
-
-li.menuObject
-{
-width:116px;
-float:left;
-}
-
-li.menuObject:hover, li.menuObject:focus
-{
-background-color:#00FFFF;
-border-color:#E6E62E;
-}
-
-a.menuLink
-{
-color:white;
-display:block;
-text-decoration:none;
-border:5px solid;
-border-radius:15px;
-moz-border-radius:15px;
-background-color:#3D001F;
-border-color:#B53375;
-text-align:center;
-}
-
-a.menuLink:hover, a.menuLink:focus
-{
-color:black;
-background-color:#00FFFF;
-border-color:#E6E62E;
-}
-
-.menuS
-{
-width:99.8%;
-height:33px;
-background-color:#00FFFF;
-border-width:2px;
-border-color:#3D001F;
-}
-
-.invisible
-{
-	visibility:false;
-	display:none;
-}
-
-.navigation
-{
+	/* Home page class settings */
+	.header
+	{
 	width:99.8%;
-}
+	height:38px;
+	background-color:#3D001F;
+	border-style:inset;
+	}
 
-.main
-{
-width:99.8%;
-background-color:#00FFFF;
-position:relative;top:-5px;
-border-width:2px;
-border-style:inset;
-border-color:#3D001F;
-}
+	.title
+	{
+	margin:0;
+	color:white;
+	}
 
-.page
-{
-border-style:outset;
-width:99.8%;
-position:absolute;
-background-color:#00FFFF;
-}
+	ul
+	{
+	margin:0;
+	padding-top:0;
+	}
 
-/* Main home page */
-img.snow
-{
-width:350px;
-margin-left:20px;
-margin-top:-50px;
-}
+	ul.menu
+	{
+	list-style-type:none;
+	padding:0;
+	}
 
-img.boxFade
-{
-width:300px;
-height:300px;
-margin-top:30px;
-float:left;
-}
+	li.menuObject
+	{
+	width:116px;
+	float:left;
+	}
 
-/* info/skills page styles */
-.infoInner
-{
-width:49.6%;
-height:300px;
-text-align:center;
-border-style:inset;
-float:left;
-}
+	li.menuObject:hover, li.menuObject:focus
+	{
+	background-color:#00FFFF;
+	border-color:#E6E62E;
+	}
 
-.infoText
-{
-width:98%;
-top:50%;
-border-style:none;
-}
+	a.menuLink
+	{
+	color:white;
+	display:block;
+	text-decoration:none;
+	border:5px solid;
+	border-radius:15px;
+	moz-border-radius:15px;
+	background-color:#3D001F;
+	border-color:#B53375;
+	text-align:center;
+	}
 
-/* Projects page styles */
-#projPar
-{
-margin:2em;
-text-indent:5em;
-}
+	a.menuLink:hover, a.menuLink:focus
+	{
+	color:black;
+	background-color:#00FFFF;
+	border-color:#E6E62E;
+	}
 
-#projH3
-{
-margin:1em;
-}
+	.menuS
+	{
+	width:99.8%;
+	height:33px;
+	background-color:#00FFFF;
+	border-width:2px;
+	border-color:#3D001F;
+	}
 
-ul.project
-{
-padding-left:5em;
-width:600px;
-float:left;
-}
+	.invisible
+	{
+		visibility:false;
+		display:none;
+	}
 
-ul.feat
-{
-padding-left:2.5em;
-}
+	.navigation
+	{
+		width:99.8%;
+	}
 
-li.nosty
-{
-list-style-type:none;
-padding-left:-1em;
-}
+	.main
+	{
+	width:99.8%;
+	background-color:#00FFFF;
+	position:relative;top:-5px;
+	border-width:2px;
+	border-style:inset;
+	border-color:#3D001F;
+	}
 
-/*****Work Page Styles*****/
-dt.responsibilities
-{
-margin-left:10em;
-}
+	.page
+	{
+	border-style:outset;
+	width:99.8%;
+	position:absolute;
+	background-color:#00FFFF;
+	}
 
-dd.responsibilities
-{
-margin-left:11em;
-}
+	/* Main home page */
+	img.snow
+	{
+	width:350px;
+	margin-left:20px;
+	margin-top:-50px;
+	}
 
-dd.skillsDeveloped
-{
-margin-left:11em;
-}
+	img.boxFade
+	{
+	width:300px;
+	height:300px;
+	margin-top:30px;
+	float:left;
+	}
 
-dt.skillsDeveloped
-{
-margin-left:10em;
-}
+	/* info/skills page styles */
+	.infoInner
+	{
+	width:49.6%;
+	height:300px;
+	text-align:center;
+	border-style:inset;
+	float:left;
+	}
+
+	.infoText
+	{
+	width:98%;
+	top:50%;
+	border-style:none;
+	}
+
+	/* Projects page styles */
+	#projPar
+	{
+	margin:2em;
+	text-indent:5em;
+	}
+
+	#projH3
+	{
+	margin:1em;
+	}
+
+	ul.project
+	{
+	padding-left:5em;
+	width:600px;
+	float:left;
+	}
+
+	ul.feat
+	{
+	padding-left:2.5em;
+	}
+
+	li.nosty
+	{
+	list-style-type:none;
+	padding-left:-1em;
+	}
+
+	/*****Work Page Styles*****/
+	dt.responsibilities
+	{
+	margin-left:10em;
+	}
+
+	dd.responsibilities
+	{
+	margin-left:11em;
+	}
+
+	dd.skillsDeveloped
+	{
+	margin-left:11em;
+	}
+
+	dt.skillsDeveloped
+	{
+	margin-left:10em;
+	}
 }
 
 @media handheld
 {
-img.snow
-{
-width:125px;
-margin-left:0;
-margin-top:-10px;
-}
+	img.snow
+	{
+		width:125px;
+		margin-left:0;
+		margin-top:-10px;
+	}
 
-img.boxFade
-{
-margin:0;
-margin-top:-20px;
-float:left;
-}
+	img.boxFade
+	{
+		margin:0;
+		margin-top:-20px;
+		float:left;
+	}
 }
