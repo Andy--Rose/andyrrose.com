@@ -1,3 +1,4 @@
+// TODO: When the page gets to the point when it scales virtically
 function setNavigation(page) {
 	var nav = '<nav class="navbar navbar-inverse navbar-fixed-top">';
 	nav += '<div class="container-fluid">';
