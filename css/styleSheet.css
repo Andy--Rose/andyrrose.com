@@ -29,7 +29,12 @@
 	{
 		height:30px;
 		width:30px;
-		border:3px solid #333;
+	}
+	
+	.carousel-indicators > li:hover
+	{
+		height:35px;
+		width:35px;
 	}
 	
 	.carousel-indicators > li > img
@@ -45,7 +50,14 @@
 	{
 		height:30px;
 		width:30px;
-		border:3px solid #333;
+		border-bottom: 3px solid #333;
+		border-radius:0;
+	}
+	
+	#work_carousel_inner > .item
+	{
+		width: 80%;
+		left: 10%;
 	}
 	
 	#btn_medallia
@@ -72,42 +84,9 @@
 	}
 	
 	/*////////////*/
-	.skills_developed
-	{
-		
-	}
-	
-	.select_wheel
-	{
-		width:60%;
-		margin:0 auto;
-		padding-top:10px;
-		padding-bottom:10px;
-		position:relative;
-		float:right;
-	}
-
-	.select_wheel > .option
-	{
-		width:30px;
-		margin:0 auto;
-		border:0;
-		border-top:2px solid;
-		border-bottom:2px solid;
-		padding:5px;
-		position:relative;
-	}
-
-	.select_wheel_option:hover
-	{
-		border:0;
-		border-top:4px solid;
-		border-bottom:4px solid;
-		cursor:pointer;
-	}
+/* 
 
 
-	/* Home page class settings */
 	.header
 	{
 	width:99.8%;
@@ -204,7 +183,7 @@
 	background-color:#00FFFF;
 	}
 
-	/* Main home page */
+
 	img.snow
 	{
 	width:350px;
@@ -220,7 +199,7 @@
 	float:left;
 	}
 
-	/* info/skills page styles */
+
 	.infoInner
 	{
 	width:49.6%;
@@ -237,7 +216,7 @@
 	border-style:none;
 	}
 
-	/* Projects page styles */
+
 	#projPar
 	{
 	margin:2em;
@@ -267,7 +246,7 @@
 	padding-left:-1em;
 	}
 
-	/*****Work Page Styles*****/
+
 	dt.responsibilities
 	{
 	margin-left:10em;
@@ -276,7 +255,7 @@
 	dd.responsibilities
 	{
 	margin-left:11em;
-	}
+	} */
 }
 
 @media handheld

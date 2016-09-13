@@ -12,19 +12,19 @@
 	<body onload="setNavigation('work')">
 		<div class="container-fluid">
 			<div id="navMenu"></div>
-			<div id="workCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+			<div id="work_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
 				<ol class="carousel-indicators">
-					<li id="btn_medallia" data-target="#workCarousel" data-slide-to="0" class="active"></li>
-					<li id="btn_infospace" data-target="#workCarousel" data-slide-to="1"></li>
-					<li id="btn_uw" data-target="#workCarousel" data-slide-to="2"></li>
-					<li id="btn_otherJobs" data-target="#workCarousel" data-slide-to="3"></li>
+					<li id="btn_medallia" data-target="#work_carousel" data-slide-to="0" class="active"></li>
+					<li id="btn_infospace" data-target="#work_carousel" data-slide-to="1"></li>
+					<li id="btn_uw" data-target="#work_carousel" data-slide-to="2"></li>
+					<li id="btn_otherJobs" data-target="#work_carousel" data-slide-to="3"></li>
 				</ol>
 			
 				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
+				<div id="work_carousel_inner" class="carousel-inner" role="listbox">
 					<div id="medallia" class="item active">
-						<h3 style="text-indent:5em;margin-bottom:0;">Medallia</h3>
-						<p style="margin-left:10em;margin-top:0;margin-right:5em;margin-bottom:0;">
+						<h3><b>Medallia</b></h3>
+						<p>
 							<b>Title:</b> Cloud Engineer
 							<br />
 							<b>Period:</b> June 16, 2015 - Current
@@ -51,8 +51,8 @@
 					</div>
 
 					<div id="blucora" class="item">
-						<h3 style="text-indent:5em;margin-bottom:0;"><b>Blucora -  InfoSpace</b></h3>
-						<p style="margin-left:10em;margin-top:0;margin-right:5em;margin-bottom:0;">
+						<h3><b>Blucora -  InfoSpace</b></h3>
+						<p>
 							<b>Title:</b> Software Dev/Engineering Intern
 							<br />
 							<b>Period:</b> October 9, 2012 - May 26, 2015
@@ -80,10 +80,10 @@
 					</div>
 
 					<div id="uw" class="item">
-						<h3 style="text-indent:5em;margin-bottom:0;">
+						<h3>
 							<b>University of Washington</b>
 						</h3>
-						<p style="margin-left:10em;margin-top:0;margin-right:5em;margin-bottom:0;">
+						<p>
 							<b>Department:</b> UWTV/IT
 							<br />
 							<b>Title:</b> Intern for Software Engineering
@@ -107,8 +107,8 @@
 					</div>
 					
 					<div id="other" class="item">
-						<h3 style="text-indent:5em;margin-bottom:0;"><b>Other Interesting Jobs</b></h3>
-						<p style="margin-left:10em;margin-top:0;margin-right:5em;margin-bottom:0;">
+						<h3><b>Other Jobs</b></h3>
+						<p>
 							<b>Professional Disc Jockey</b> 2007 - 2012
 							<br />
 							<b>Snowboard/Ski Instructor</b> 2002 - 2014
@@ -122,11 +122,11 @@
 			</div>
 
 			<!-- Left and right controls -->
-			<a class="left carousel-control" href="#workCarousel" role="button" data-slide="prev">
+			<a class="left carousel-control" href="#work_carousel" role="button" data-slide="prev">
 				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
 			</a>
-			<a class="right carousel-control" href="#workCarousel" role="button" data-slide="next">
+			<a class="right carousel-control" href="#work_carousel" role="button" data-slide="next">
 				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
 			</a>
