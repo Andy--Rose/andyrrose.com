@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="styleSheet.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="scripts/bootstrap.js"></script>
+		<script src="scripts/navigation.js" ></script>
 	</head>
 
-	<body style="background-color:#F0F0B9;border-color:#3D001F;">
-		<div id="outer">
-			<div id="info_container" class="infoInner">
-				<div id="genInfo" class="infoText">
+	<body onload="setNavigation('info')">
+		<div class="container-fluid">
+			<div id="navMenu"></div>
+			<div class="row">
+				<div id="info_container" class="col-md-12">
 					<h2>General Information</h2>
 					<br />
 					<b>Name:</b> Andrew Rose
@@ -19,45 +22,106 @@
 					<b>Locale:</b> Issaquah, WA
 					<br />
 					<br />
-					<a href="http://www.linkedin.com/pub/andy-rose/39/576/902">
-          					<img src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x33.png" 
-						   width="160" height="33" border="0" 
-						   alt='View Andy Rose's profile on LinkedIn">
-    					</a>
-				</div>
-			</div>
-			<div id="skill_container" class="infoInner">
-				<div id="skills" class="infoText">
-					<h2>Skills</h2>
-					<b>Development:</b> GO, C#, Java, C++
-					<br />
-					<b>Scripting:</b> Ruby, Python, Bash, Powershell
-					<br />
-					<b>Web Development:</b> HTML, CSS, JavaScript, Spring, ASP.NET MVC
-					<br />
-					<b>Database Systems:</b> PostgreSQL, SQL, Access, RavenDB, ElasticSearch, Dynamo
-					<br />
-					<b>Infrastructure:</b> AWS, VMWare
-					<br />
-					<b>UI Design:</b> JavaScript, Java, C#, C/C++, VB
-					<br />
-					<b>Graphic Animation: </b> C/C++ using OpenGL
-					<br />
-					<b>Monitoring:</b> Wavefront, CollectD, CloudWatch, DataDog, Graphite, Zabbix
-					<br />
-					<b>Deployment:</b> Chef, Puppet, Mesos, Aurora, Jenkins, CCNET
-					<br />
-					<b>Computer Vision:</b> Matlab and C#
-					<br />
-					<b>Version Control:</b> Git, SVN
-					<br />
-					<b>Other:</b> SumoLogic, Visual Studio, CentOS, Microsoft Server 2008/2012
-					<br />
-					<br />
 					<b>School:</b> Central Washington University
 					<br />
 					<b>Degree:</b> Bachelors in Computer Science
 					<br />
+					<br />
+					<a href="http://www.linkedin.com/pub/andy-rose/39/576/902">
+							<img src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x33.png" 
+						   width="160" height="33" border="0" 
+						   alt='View Andy Rose's profile on LinkedIn">
+						</a>
+				</div>
+			</div>
+			<div class="row">
+				<div id="skill_container" class="col-md-12">
+					<div id="skills" class="infoText">
+						<h2>Skills</h2>
+						<u><b>Development</b></u>
+						<br />
+						<span class="badge">GO</span>
+						<span class="badge">C#</span>
+						<span class="badge">Java</span>
+						<span class="badge">C/C++</span>
+						<br />
+						<u><b>Scripting</b></u>
+						<br />
+						<span class="badge">Ruby</span>
+						<span class="badge">Python</span>
+						<span class="badge">Bash</span>
+						<span class="badge">Powershell</span>
+						<br />
+						<u><b>Web Development</b></u>
+						<br />
+						<span class="badge">HTML</span>
+						<span class="badge">CSS</span>
+						<span class="badge">JavaScript</span>
+						<span class="badge">Spring</span>
+						<span class="badge">ASP.NET MVC</span>
+						<br />
+						<u><b>Database Systems</b></u>
+						<br />
+						<span class="badge">PostgreSQL</span>
+						<span class="badge">SQL</span>
+						<span class="badge">Access</span>
+						<span class="badge">RavenDB</span>
+						<span class="badge">ElasticSearch</span>
+						<span class="badge">Dynamo</span>
+						<br />
+						<u><b>Infrastructure</b></u>
+						<br />
+						<span class="badge">AWS</span>
+						<span class="badge">VMWare</span>
+						<br />
+						<u><b>UI Design</b></u>
+						<br />
+						<span class="badge">JavaScript</span>
+						<span class="badge">Java</span>
+						<span class="badge">C#</span>
+						<span class="badge">C/C++</span>
+						<span class="badge">VB</span>
+						<br />
+						<u><b>Graphic Animation</b></u>
+						<br />
+						<span class="badge">C/C++ using OpenGL</span>
+						<br />
+						<u><b>Monitoring</b></u>
+						<br />
+						<span class="badge">Wavefront</span>
+						<span class="badge">CollectD</span>
+						<span class="badge">CloudWatch</span>
+						<span class="badge">DataDog</span>
+						<span class="badge">Graphite</span>
+						<span class="badge">Zabbix</span>
+						<br />
+						<u><b>Deployment</b></u>
+						<br />
+						<span class="badge">Chef</span>
+						<span class="badge">Puppet</span>
+						<span class="badge">Mesos</span>
+						<span class="badge">Aurora</span>
+						<span class="badge">Jenkins</span>
+						<span class="badge">CCNET</span>
+						<br />
+						<u><b>Computer Vision</b></u>
+						<br />
+						<span class="badge">Matlab</span>
+						<span class="badge">C#</span>
+						<br />
+						<u><b>Version Control</b></u>
+						<br />
+						<span class="badge">Git</span>
+						<span class="badge">SVN</span>
+						<br />
+						<u><b>Other</b></u>
+						<br />
+						<span class="badge">SumoLogic</span>
+						<span class="badge">Visual Studio</span>
+						<span class="badge">CentOS</span>
+						<span class="badge">Microsoft Server 2008/2012</span>
+						<br />
+					</div>
 				</div>
 			</div>
 		</div>

@@ -1,0 +1,115 @@
+@media screen
+{
+	button > a
+	{
+		color: white;
+	}
+	
+	#navMenu
+	{
+		height:50px;
+	}
+
+	#info_container
+	{
+		text-align:center;
+	}
+	
+	#skill_container
+	{
+		text-align:center;
+	}
+	
+	.carousel
+	{
+		margin-top: 100px;
+	}
+	
+	.carousel-indicators
+	{
+		top:-50px;
+	}
+	
+	.carousel-indicators > li 
+	{
+		height:30px;
+		width:30px;
+	}
+	
+	.carousel-indicators > li:hover
+	{
+		height:35px;
+		width:35px;
+	}
+	
+	.carousel-indicators > li > img
+	{
+		position:relative;
+		left:0px;
+		text-indent:0px;
+		width:25px;
+		height:25px;
+	}
+	
+	.carousel-indicators > .active
+	{
+		height:30px;
+		width:30px;
+		border-bottom: 3px solid #333;
+		border-radius:0;
+	}
+	
+	.rotate180 {
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	
+	#work_carousel_inner > .item
+	{
+		width: 80%;
+		left: 10%;
+	}
+	
+	#btn_medallia
+	{
+		background:url("../images/logos/MedalliaLogo.png") no-repeat scroll center;
+		background-size: 100%;
+	}
+	
+	#btn_infospace
+	{
+		background:url("../images/logos/InfospaceLogo.png") no-repeat scroll center;
+		background-size: 100%;
+	}
+	
+	#btn_uw
+	{
+		background:url("../images/logos/uwLogo.png") no-repeat scroll center;
+		background-size: 100%;
+	}
+	#btn_otherJobs
+	{
+		background:url("../images/default/record.png") no-repeat scroll center;
+		background-size: 100%;
+	}
+}
+
+@media handheld
+{
+	img.snow
+	{
+		width:125px;
+		margin-left:0;
+		margin-top:-10px;
+	}
+
+	img.boxFade
+	{
+		margin:0;
+		margin-top:-20px;
+		float:left;
+	}
+}

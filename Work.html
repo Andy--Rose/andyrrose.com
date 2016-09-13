@@ -1,150 +1,135 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="styleSheet.css" />
+		<link rel="stylesheet" type="text/css" href="css/styleSheet.css" />
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+		<script src="scripts/bootstrap.js"></script>
+		<script src="scripts/navigation.js" ></script>
 	</head>
 
-	<body style="height:99.8%;margin:0;padding:0;background-color:#F0F0B9;border-color:#3D001F;">
-		<div id="Medallia">
-			<h3 style="text-indent:5em;margin-bottom:0;">
-				<b>Medallia</b>
-			</h3>
-			<p style="margin-left:10em;margin-top:0;margin-right:5em;margin-bottom:0;">
-				<b>Title:</b> Cloud Engineer
-				<br />
-				<b>Period:</b> June 16, 2015 - Current
-				<br />
-				<b>Supervisor:</b> Johnny Truong
-			</p>
-			<dt class="responsibilities"><b>Responsibilities:</b></dt>
-				<dd class="responsibilities">Own, support and manage environments on AWS Cloud infrastructure</dd>
-				<dd class="responsibilities">Automate and manage infrastructure using Docker, Mesos, and Aurora</dd>
-				<dd class="responsibilities">Configure/own migration to new monitoring tool for all environments</dd>
-				<dd class="responsibilities">Develop automation for processes using scripting/programming languages</dd>
-				<dd class="responsibilities">Documentation of existing and new systems</dd>
-				<dd class="responsibilities">Daily operational support; L2 support rotations (cloud and on-prem)</dd>
-				<dd class="responsibilities">Manage off-shore team of contracted engineers</dd>
-			<dt class="skillsDeveloped"><b>Skills Developed:</b></dt>
-				<dd class="skillsDeveloped">Contractor Management</dd>
-				<dd class="skillsDeveloped">Linux Administration</dd>
-				<dd class="skillsDeveloped">Infrastructure Frameworks</dd>
-				<dd class="skillsDeveloped">AWS</dd>
-				<dd class="skillsDeveloped">Java</dd>
-				<dd class="skillsDeveloped">GO</dd>
-				<dd class="skillsDeveloped">Python</dd>
-				<dd class="skillsDeveloped">CollectD/Wavefront/Zabbix/DataDog</dd>
-			<br />
-		</div>
-		<div id="Blucora">
-			<h3 style="text-indent:5em;margin-bottom:0;">
-				<b>Blucora -  InfoSpace</b>
-			</h3>
-			<p style="margin-left:10em;margin-top:0;margin-right:5em;margin-bottom:0;">
-				<b>Title:</b> Software Dev/Engineering Intern
-				<br />
-				<b>Period:</b> October 9, 2012 - May 26, 2015
-				<br />
-				<b>Supervisor:</b> Chris Peterson
-			</p>
-			<dt class="responsibilities"><b>Responsibilities:</b></dt>
-				<dd class="responsibilities">Infrastructure management in AWS</dd>
-				<dd class="responsibilities">Automation for deployment and maintenance using Chef</dd>
-				<dd class="responsibilities">Monitoring for enterprise infrastructure</dd>
-				<dd class="responsibilities">Own the implementation of key features or sub-components</dd>
-				<dd class="responsibilities">Full-cycle development of tools to increase performance</dd>
-				<dd class="responsibilities">Tier 2 support for on-prem and AWS environments</dd>
-			<dt class="skillsDeveloped"><b>Skills Developed:</b></dt>
-				<dd class="skillsDeveloped">Team building</dd>
-				<dd class="skillsDeveloped">Software testing</dd>
-				<dd class="skillsDeveloped">Chef</dd>
-				<dd class="skillsDeveloped">CollectD/StatsD/Graphite/DataDog</dd>
-				<dd class="skillsDeveloped">AWS</dd>
-				<dd class="skillsDeveloped">Jenkins</dd>
-				<dd class="skillsDeveloped">C#</dd>
-				<dd class="skillsDeveloped">JavaScript</dd>
-				<dd class="skillsDeveloped">ASP.NET MVC</dd>
-				<dd class="skillsDeveloped">Windows Server 2008/2012</dd>
-			<br />
-		</div>		
-		
-		<div id="DJ">
-			<h3 style="text-indent:5em;margin-bottom:0;">
-				<b>Entertainment Plus Disc Jockey Service</b>
-			</h3>
-			<p style="margin-left:10em;margin-top:0;margin-right:5em;margin-bottom:0;">
-				<b>Title:</b> Professional Disc Jockey
-				<br />
-				<b>Period:</b> January 2007 - Current
-				<br />
-				<b>Supervisor:</b> Darren Smith
-				<br />
-			</p>
-			<dt class="responsibilities"><b>Responsibilities:</b></dt>
-				<dd class="responsibilities">- DJ at a local bar</dd>
-				<dd class="responsibilities">- DJ private events (weddings, parties, and dances)</dd>
-				<dd class="responsibilities">- Control flow and coordinate events</dd>
-				<dd class="responsibilities">- Provide customer service</dd>
-				<dd class="responsibilities">- Read a large number of people and judge reactions</dd>
-			<dt class="skillsDeveloped"><b>Skills Developed:</b></dt>
-				<dd class="skillsDeveloped">- Simultaneous communication</dd>
-				<dd class="skillsDeveloped">- Coordination large-scale events</dd>
-				<dd class="skillsDeveloped">- Performing under pressure</dd>
-				<dd class="skillsDeveloped">- Customer service</dd>
-				<dd class="skillsDeveloped">- Adjusting to meet the desires of customers</dd>
-			<br />
-		</div>
+	<body onload="setNavigation('work')">
+		<div class="container-fluid">
+			<div id="navMenu"></div>
+			<div id="work_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+				<ol class="carousel-indicators">
+					<li id="btn_medallia" data-target="#work_carousel" data-slide-to="0" class="active"></li>
+					<li id="btn_infospace" data-target="#work_carousel" data-slide-to="1"></li>
+					<li id="btn_uw" data-target="#work_carousel" data-slide-to="2"></li>
+					<li id="btn_otherJobs" data-target="#work_carousel" data-slide-to="3"></li>
+				</ol>
+			
+				<!-- Wrapper for slides -->
+				<div id="work_carousel_inner" class="carousel-inner" role="listbox">
+					<div id="medallia" class="item active">
+						<h3><b>Medallia</b></h3>
+						<p>
+							<b>Title:</b> Cloud Engineer
+							<br />
+							<b>Period:</b> June 16, 2015 - Current
+							<br />
+							<b>Supervisor:</b> Johnny Truong
+						</p>
+						<dt class="responsibilities"><b>Responsibilities:</b></dt>
+							<dd class="responsibilities">Own, support and manage environments on AWS Cloud infrastructure</dd>
+							<dd class="responsibilities">Automate and manage infrastructure using Docker, Mesos, and Aurora</dd>
+							<dd class="responsibilities">Configure/own migration to new monitoring tool for all environments</dd>
+							<dd class="responsibilities">Develop automation for processes using scripting/programming languages</dd>
+							<dd class="responsibilities">Documentation of existing and new systems</dd>
+							<dd class="responsibilities">Daily operational support; L2 support rotations (cloud and on-prem)</dd>
+							<dd class="responsibilities">Manage off-shore team of contracted engineers</dd>
+						<dt class="skillsDeveloped"><b>Skills Developed:</b></dt>
+							<dd class="skillsDeveloped badge">Contractor Management</dd>
+							<dd class="skillsDeveloped badge">Linux Administration</dd>
+							<dd class="skillsDeveloped badge">Infrastructure Frameworks</dd>
+							<dd class="skillsDeveloped badge">AWS</dd>
+							<dd class="skillsDeveloped badge">Java</dd>
+							<dd class="skillsDeveloped badge">GO</dd>
+							<dd class="skillsDeveloped badge">Python</dd>
+							<dd class="skillsDeveloped badge">CollectD/Wavefront/Zabbix/DataDog</dd>
+					</div>
 
-		<div id="UW">			
-			<h3 style="text-indent:5em;margin-bottom:0;">
-				<b>University of Washington</b>
-			</h3>
-			<p style="margin-left:10em;margin-top:0;margin-right:5em;margin-bottom:0;">
-				<b>Department:</b> UWTV/IT
-				<br />
-				<b>Title:</b> Intern for Software Engineering
-				<br />
-				<b>Period:</b> June 2011 - September 2011
-				<br />
-				<b>Supervisor:</b> Laurens Banker
-			</p>
-			<dt class="responsibilities"><b>Responsibilities:</b></dt>
-				<dd class="responsibilities">- Learn and understand a new system</dd>
-				<dd class="responsibilities">- Communicate with upper-level IT personnel</dd>
-				<dd class="responsibilities">- Complete an independent End-to-End project</dd>
-				<dd class="responsibilities">- Develop an effective systems tool</dd>
-			<dt class="skillsDeveloped"><b>Skills Developed:</b></dt>
-				<dd class="skillsDeveloped">- Experience in a work environment</dd>
-				<dd class="skillsDeveloped">- Communication with a superior and client</dd>
-				<dd class="skillsDeveloped">- Dynamic-styled programming (especially with UI)</dd>
-				<dd class="skillsDeveloped">- Versioning control</dd>
-				<dd class="skillsDeveloped">- SQL databases</dd>
-				<dd class="skillsDeveloped">- C# development practices</dd>
-			<br />
-		</div>
-	
-		<div id="CWU">
-			<h3 style="text-indent:5em;margin-bottom:0;">
-				<b>Central Washington University</b>
-			</h3>
-				<p style="margin-left:10em;margin-top:0;margin-right:5em;margin-bottom:0;">
-				<b>Department:</b> Computer Science
-				<br />
-				<b>Title:</b> On-Duty Teaching Assistant
-				<br />
-				<b>Period:</b> January 2012 - March 2012
-				<br />
-				<b>Supervisor:</b> Zachary Geesaman
-			</p>
-			<dt class="responsibilities"><b>Responsibilities:</b></dt>
-				<dd class="responsibilities">- Report timely to lab</dd>
-				<dd class="responsibilities">- Help students with assignments</dd>
-				<dd class="responsibilities">- Answer questions pertaining to computer science</dd>
-			<dt class="skillsDeveloped"><b>Skills Developed:</b></dt>
-				<dd class="skillsDeveloped">- Teaching beginning software development</dd>
-				<dd class="skillsDeveloped">- Team problem solving</dd>
-				<dd class="skillsDeveloped">- Program testing</dd>
-				<dd class="skillsDeveloped">- Error diagnosis</dd>
-			<br />
+					<div id="blucora" class="item">
+						<h3><b>Blucora -  InfoSpace</b></h3>
+						<p>
+							<b>Title:</b> Software Dev/Engineering Intern
+							<br />
+							<b>Period:</b> October 9, 2012 - May 26, 2015
+							<br />
+							<b>Supervisor:</b> Chris Peterson
+						</p>
+						<dt class="responsibilities"><b>Responsibilities:</b></dt>
+							<dd class="responsibilities">Infrastructure management in AWS</dd>
+							<dd class="responsibilities">Automation for deployment and maintenance using Chef</dd>
+							<dd class="responsibilities">Monitoring for enterprise infrastructure</dd>
+							<dd class="responsibilities">Own the implementation of key features or sub-components</dd>
+							<dd class="responsibilities">Full-cycle development of tools to increase performance</dd>
+							<dd class="responsibilities">Tier 2 support for on-prem and AWS environments</dd>
+						<dt class="skillsDeveloped"><b>Skills Developed:</b></dt>
+							<dd class="skillsDeveloped badge">Team building</dd>
+							<dd class="skillsDeveloped badge">Software testing</dd>
+							<dd class="skillsDeveloped badge">Chef</dd>
+							<dd class="skillsDeveloped badge">CollectD/StatsD/Graphite/DataDog</dd>
+							<dd class="skillsDeveloped badge">AWS</dd>
+							<dd class="skillsDeveloped badge">Jenkins</dd>
+							<dd class="skillsDeveloped badge">C#</dd>
+							<dd class="skillsDeveloped badge">JavaScript</dd>
+							<dd class="skillsDeveloped badge">ASP.NET MVC</dd>
+							<dd class="skillsDeveloped badge">Windows Server 2008/2012</dd>
+					</div>
+
+					<div id="uw" class="item">
+						<h3>
+							<b>University of Washington</b>
+						</h3>
+						<p>
+							<b>Department:</b> UWTV/IT
+							<br />
+							<b>Title:</b> Intern for Software Engineering
+							<br />
+							<b>Period:</b> June 2011 - September 2011
+							<br />
+							<b>Supervisor:</b> Laurens Banker
+						</p>
+						<dt class="responsibilities"><b>Responsibilities:</b></dt>
+							<dd class="responsibilities">Learn and understand a new system</dd>
+							<dd class="responsibilities">Communicate with upper-level IT personnel</dd>
+							<dd class="responsibilities">Complete an independent End-to-End project</dd>
+							<dd class="responsibilities">Develop an effective systems tool</dd>
+						<dt class="skillsDeveloped"><b>Skills Developed:</b></dt>
+							<dd class="skillsDeveloped badge">Experience in a work environment</dd>
+							<dd class="skillsDeveloped badge">Communication with a superior and client</dd>
+							<dd class="skillsDeveloped badge">Dynamic-styled programming (especially with UI)</dd>
+							<dd class="skillsDeveloped badge">Versioning control</dd>
+							<dd class="skillsDeveloped badge">SQL databases</dd>
+							<dd class="skillsDeveloped badge">C# development practices</dd>
+					</div>
+					
+					<div id="other" class="item">
+						<h3><b>Other Jobs</b></h3>
+						<p>
+							<b>Professional Disc Jockey</b> 2007 - 2012
+							<br />
+							<b>Snowboard/Ski Instructor</b> 2002 - 2014
+							<br />
+							<b>CWU - Computer Science T.A.</b> 2011 - 2012
+							<br />
+							<b>Construction</b> 2007
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#work_carousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#work_carousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
 		</div>
 	</body>
 </html>
