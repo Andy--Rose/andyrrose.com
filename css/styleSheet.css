@@ -1,5 +1,10 @@
 @media screen
 {
+	button > a
+	{
+		color: white;
+	}
+	
 	#navMenu
 	{
 		height:50px;
@@ -54,6 +59,14 @@
 		border-radius:0;
 	}
 	
+	.rotate180 {
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	
 	#work_carousel_inner > .item
 	{
 		width: 80%;
@@ -82,180 +95,6 @@
 		background:url("../images/default/record.png") no-repeat scroll center;
 		background-size: 100%;
 	}
-	
-	/*////////////*/
-/* 
-
-
-	.header
-	{
-	width:99.8%;
-	height:38px;
-	background-color:#3D001F;
-	border-style:inset;
-	}
-
-	.title
-	{
-	margin:0;
-	color:white;
-	}
-
-	ul
-	{
-	margin:0;
-	padding-top:0;
-	}
-
-	ul.menu
-	{
-	list-style-type:none;
-	padding:0;
-	}
-
-	li.menuObject
-	{
-	width:116px;
-	float:left;
-	}
-
-	li.menuObject:hover, li.menuObject:focus
-	{
-	background-color:#00FFFF;
-	border-color:#E6E62E;
-	}
-
-	a.menuLink
-	{
-	color:white;
-	display:block;
-	text-decoration:none;
-	border:5px solid;
-	border-radius:15px;
-	moz-border-radius:15px;
-	background-color:#3D001F;
-	border-color:#B53375;
-	text-align:center;
-	}
-
-	a.menuLink:hover, a.menuLink:focus
-	{
-	color:black;
-	background-color:#00FFFF;
-	border-color:#E6E62E;
-	}
-
-	.menuS
-	{
-	width:99.8%;
-	height:33px;
-	background-color:#00FFFF;
-	border-width:2px;
-	border-color:#3D001F;
-	}
-
-	.invisible
-	{
-		visibility:false;
-		display:none;
-	}
-
-	.navigation
-	{
-		width:99.8%;
-	}
-
-	.main
-	{
-	width:99.8%;
-	background-color:#00FFFF;
-	position:relative;top:-5px;
-	border-width:2px;
-	border-style:inset;
-	border-color:#3D001F;
-	}
-
-	.page
-	{
-	border-style:outset;
-	width:99.8%;
-	position:absolute;
-	background-color:#00FFFF;
-	}
-
-
-	img.snow
-	{
-	width:350px;
-	margin-left:20px;
-	margin-top:-50px;
-	}
-
-	img.boxFade
-	{
-	width:300px;
-	height:300px;
-	margin-top:30px;
-	float:left;
-	}
-
-
-	.infoInner
-	{
-	width:49.6%;
-	height:300px;
-	text-align:center;
-	border-style:inset;
-	float:left;
-	}
-
-	.infoText
-	{
-	width:98%;
-	top:50%;
-	border-style:none;
-	}
-
-
-	#projPar
-	{
-	margin:2em;
-	text-indent:5em;
-	}
-
-	#projH3
-	{
-	margin:1em;
-	}
-
-	ul.project
-	{
-	padding-left:5em;
-	width:600px;
-	float:left;
-	}
-
-	ul.feat
-	{
-	padding-left:2.5em;
-	}
-
-	li.nosty
-	{
-	list-style-type:none;
-	padding-left:-1em;
-	}
-
-
-	dt.responsibilities
-	{
-	margin-left:10em;
-	}
-
-	dd.responsibilities
-	{
-	margin-left:11em;
-	} */
 }
 
 @media handheld
