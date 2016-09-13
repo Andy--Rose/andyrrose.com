@@ -15,6 +15,68 @@
 		text-align:center;
 	}
 	
+	.carousel
+	{
+		margin-top: 100px;
+	}
+	
+	.carousel-indicators
+	{
+		top:-50px;
+	}
+	
+	.carousel-indicators > li 
+	{
+		height:30px;
+		width:30px;
+		border:3px solid #333;
+	}
+	
+	.carousel-indicators > li > img
+	{
+		position:relative;
+		left:0px;
+		text-indent:0px;
+		width:25px;
+		height:25px;
+	}
+	
+	.carousel-indicators > .active
+	{
+		height:30px;
+		width:30px;
+		border:3px solid #333;
+	}
+	
+	#btn_medallia
+	{
+		background:url("../images/logos/MedalliaLogo.png") no-repeat scroll center;
+		background-size: 100%;
+	}
+	
+	#btn_infospace
+	{
+		background:url("../images/logos/InfospaceLogo.png") no-repeat scroll center;
+		background-size: 100%;
+	}
+	
+	#btn_uw
+	{
+		background:url("../images/logos/uwLogo.png") no-repeat scroll center;
+		background-size: 100%;
+	}
+	#btn_otherJobs
+	{
+		background:url("../images/default/record.png") no-repeat scroll center;
+		background-size: 100%;
+	}
+	
+	/*////////////*/
+	.skills_developed
+	{
+		
+	}
+	
 	.select_wheel
 	{
 		width:60%;
@@ -44,11 +106,6 @@
 		cursor:pointer;
 	}
 
-	.select_wheel_option_image
-	{
-		width:30px;
-		height:30px;
-	}
 
 	/* Home page class settings */
 	.header
@@ -219,16 +276,6 @@
 	dd.responsibilities
 	{
 	margin-left:11em;
-	}
-
-	dd.skillsDeveloped
-	{
-	margin-left:11em;
-	}
-
-	dt.skillsDeveloped
-	{
-	margin-left:10em;
 	}
 }
 
