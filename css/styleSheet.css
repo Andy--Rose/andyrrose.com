@@ -5,6 +5,11 @@
 		color: white;
 	}
 	
+	img, .img-responsive
+	{
+		max-width: 500px;
+	}
+	
 	#navMenu
 	{
 		height:50px;
@@ -99,17 +104,10 @@
 
 @media handheld
 {
-	img.snow
+	img#snow
 	{
 		width:125px;
 		margin-left:0;
 		margin-top:-10px;
-	}
-
-	img.boxFade
-	{
-		margin:0;
-		margin-top:-20px;
-		float:left;
 	}
 }
