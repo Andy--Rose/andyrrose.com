@@ -14,9 +14,12 @@
 		<script src="scripts/navigation.js" ></script>
 	</head>
 
-	<body onload="setNavigation('work')">
+	<body>
+		<script type="text/javascript">
+			document.write(getNavigationHtml());
+			setNavigation('work');
+		</script>
 		<div class="container-fluid">
-			<div id="navMenu"></div>
 			<div id="work_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
 				<ol class="carousel-indicators">
 					<li id="btn_medallia" data-target="#work_carousel" data-slide-to="0" class="active"></li>

@@ -1,4 +1,3 @@
-<!-- TODO: Fix links -->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -15,9 +14,12 @@
 		<script src="scripts/navigation.js" ></script>
 	</head>
 
-	<body onload="setNavigation('papers')">
+	<body>
+		<script type="text/javascript">
+			document.write(getNavigationHtml());
+			setNavigation('papers');
+		</script>
 		<div class="container-fluid">
-			<div id="navMenu"></div>
 			<div id="driving">
 				<h3 id="projH3">
 					Autonomous Driving Paper

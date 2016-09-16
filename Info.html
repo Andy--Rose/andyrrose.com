@@ -14,9 +14,12 @@
 		<script src="scripts/navigation.js" ></script>
 	</head>
 
-	<body onload="setNavigation('info')">
+	<body>
+		<script type="text/javascript">
+			document.write(getNavigationHtml());
+			setNavigation('info');
+		</script>
 		<div class="container-fluid">
-			<div id="navMenu"></div>
 			<div class="row">
 				<div id="info_container" class="col-md-12">
 					<h2>General Information</h2>

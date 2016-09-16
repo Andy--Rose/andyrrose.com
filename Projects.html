@@ -14,9 +14,12 @@
 		<script src="scripts/navigation.js" ></script>
 	</head>
 
-	<body onload="setNavigation('projects')">
+	<body>
+		<script type="text/javascript">
+			document.write(getNavigationHtml());
+			setNavigation('projects');
+		</script>
 		<div class="container-fluid">
-			<div id="navMenu"></div>
 			<div id="MRSS">
 				<h3>UWTV Internship Project (Independent)</h3>	
 				<ul>

@@ -1,4 +1,3 @@
-<!-- TODO: Fix menu getting overdrawn by carousel arrows -->
 <!-- TODO: Fix Menu Responsiveness for small window -->
 <!-- TODO: Add Carousel to projects page -->
 <!-- TODO: Update Projects content -->
@@ -25,13 +24,18 @@
 		<script src="scripts/navigation.js" ></script>
 	</head>
 
-	<body id="home_body" onload="setHomeNav();">
+	<body id="home_body">
 		<div id="home_container" class="container-fluid home-bg text-center">
 			<img id="img_profile" class="img-circle img-responsive" src="images/pictures/Profile_Evans.png" />
 			<div class="header">
 				<h3>Andy Rose<br />Software Developer</h3>
 			</div>
-			<div id="navMenu" class="home-nav"></div>
+			<div id="navMenu" class="home-nav">
+				<script type="text/javascript">
+					document.write(getNavigationHtml());
+					setHomeNav();
+				</script>
+			</div>
 		</div>
 	</body>
 </html>
