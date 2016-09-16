@@ -31,5 +31,6 @@ function setNavigation(page) {
 function setHomeNav() {
 	setNavigation('home');
 	$(".navbar-brand")[0].remove();
-	$(".navbar").css("text-align", "center");
+	$(".navbar").css("display", "inline-block");
+    $(".navbar").css("float", "none");
 }
