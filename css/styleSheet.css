@@ -31,9 +31,16 @@
 		background-size: 100% auto;
 	}
 	
+	#home_body
+	{
+		background-color:lightgrey;
+		height: 100%;
+	}
+	
 	#home_container
 	{
 		padding:0;
+		height:100%;
 	}
 	
 	#img_profile
