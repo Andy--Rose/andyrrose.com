@@ -1,3 +1,4 @@
+<!-- TODO: Fix Menu Responsiveness for small window -->
 <!-- TODO: Make Home Page basic and move this to an About Me section -->
 <!-- TODO: Change rendering ordering. Menu doesn't appear with page. -->
 <!-- TODO: Update content formatting to make more exciting and unique. -->
@@ -22,10 +23,14 @@
 		<script src="scripts/navigation.js" ></script>
 	</head>
 
-	<body onload="setNavigation('home')">
-		<div class="container-fluid">
-			<div id="navMenu"></div>
-			<div>
+	<body id="home_body" onload="setHomeNav();">
+		<div id="home_container" class="container-fluid home-bg text-center">
+			<img id="img_profile" class="img-circle img-responsive" src="images/pictures/Profile_Evans.png" />
+			<div class="header">
+				<h3>Andy Rose<br />Software Developer</h3>
+			</div>
+			<div id="navMenu" class="home-nav"></div>
+			<!-- <div>
 				<div id="info" style="align:center;">
 					<br />
 					<p id="profile">
@@ -76,7 +81,7 @@
 						Xbox Gamertag: <span class="badge">meleemassacre</span>
 					</p>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</body>
 </html>
