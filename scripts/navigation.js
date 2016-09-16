@@ -1,8 +1,4 @@
 function setNavigation(page) {
-/* 	var nav = getNavigationHtml();
-
-	document.getElementById("navMenu").innerHTML = nav; */
-	
 	$(".nav").find("li").each(function () {
 		var item = $(this)[0];
 		if (item.id == page) {
