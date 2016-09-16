@@ -150,14 +150,27 @@
 		background-size: 100%;
 	}
 	
-	#btn_uw
+	#btn_uw, #btn_mrss
 	{
 		background:url("../images/logos/uwLogo.png") no-repeat scroll center;
 		background-size: 100%;
 	}
+	
 	#btn_otherJobs
 	{
 		background:url("../images/default/record.png") no-repeat scroll center;
+		background-size: 100%;
+	}
+	
+	#btn_srproj
+	{
+		background:url("../images/logos/cwuLogo.png") no-repeat scroll center;
+		background-size: 100%;
+	}
+	
+	#btn_webski
+	{
+		background:url("../images/logos/webskiLogo.png") no-repeat scroll center;
 		background-size: 100%;
 	}
 }
