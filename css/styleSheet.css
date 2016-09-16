@@ -55,6 +55,7 @@
 	#navMenu
 	{
 		height:50px;
+		z-index:5;
 	}
 	
 	.home-nav 
@@ -122,8 +123,9 @@
 	
 	#work_carousel_inner > .item
 	{
-		width: 80%;
-		left: 10%;
+		width: 60%;
+		left: 15%;
+		min-height:400px;
 	}
 	
 	#btn_medallia
