@@ -85,6 +85,17 @@
 		margin-top: 100px;
 	}
 	
+	.carousel-inner 
+	{
+		left:15%;
+		width:60%;
+	}
+	
+	.carousel-inner > .item
+	{
+		min-height:400px;
+	}
+	
 	.carousel-indicators
 	{
 		top:-50px;
@@ -125,13 +136,6 @@
 		-o-transform: rotate(180deg);
 		-ms-transform: rotate(180deg);
 		transform: rotate(180deg);
-	}
-	
-	#work_carousel_inner > .item
-	{
-		width: 60%;
-		left: 15%;
-		min-height:400px;
 	}
 	
 	#btn_medallia

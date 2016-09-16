@@ -20,103 +20,139 @@
 			setNavigation('projects');
 		</script>
 		<div class="container-fluid">
-			<div id="MRSS">
-				<h3>UWTV Internship Project (Independent)</h3>	
-				<ul>
-					<li>Length: 2.5 months (Summer 2011)</li>
-					<li>Type: Software Tool Development/End-to-End</li>
-					<li>Summary: This system automates the process of generating MRSS 
-						code for media to connect it to the “Platform”, which streams the media 
-						online. Work completed in Visual Studio using C# and utilizing an SQL 
-						database.</li>
-					<li>Features:</li>
-					<ul>
-						<li>Built-in security for server and platform access</li>
-						<li>Created dynamic UI features giving user the most options for user</li>
-						<li>Custom advanced settings allow for quickly performing repetitive 
-							actions</li>
-						<li>Includes a built-in help interface for new users</li>
-						<li>Built comprehensively for future expansion to other departments</li>
-					</ul>
-					<li>
-						<a href="./documents/Mrss_Generator_Presentation.pdf" target="_blank">
-							<u>View Presentation</u>
-						</a>
-					</li>
-					<li>
-						<a href="./documents/MRSSProjectWriteup.pdf" target="_blank">
-							<u>View Documentation</u>
-						</a>
-					</li>
-				</ul>
-				<img style="height:250px;margin-left:50px;margin-bottom:35px;" src="images/logos/mainLogo.gif" />
-				<br />
-			</div>
-
-			<div id="SeniorProject">
-				<h3>CWU Senior Project (Team Lead)</h3>
-				<ul>
-					<li>Length: 6 Months (Fall & Winter of 2010)</li>
-					<li>Type: Software Development/UX/End-to-End</li>
-					<li>Summary: Project to create a program that organizes all 
-						equipment for Biology, Chemistry, and Geology departments at CWU. 
-						Created in Visual Studio with C# using a Microsoft Access Database 
-						with SQL (OLEDB).</li>
-					<li>Features:</li>
-					<ul>
-						<li>Tier selection, comprehensive, map, and barcode-scan search methods</li>
-						<li>Created fully-interactive map in C# using building blueprints</li>
-						<ul>
-							<li>Dynamic symbols for equipment loaded from DB in real-time</li>
-						</ul>
-						<li>Equipment maintenance alert system for admin</li>
-						<li>Built-in Calendar for admin</li>
-						<li>Included barcode scanning and creation</li>
-						<li>Import capability from Microsoft Excel</li>
-						<li>Created custom user-defined detailed printouts</li>
-						<li>Built-in network permissions using Windows Login</li>
-					</ul>
-					<li>
-						<a href="./documents/SeniorProjectUserManual.pdf" target="_blank">
-							<u>View Documentation</u>
-						</a>
-					</li>
-				</ul>
-				<img style="margin-left:50px;height:250px;margin-bottom:35px;" src="images/logos/seniorProj.gif" />
-				<br />
-			</div>
+			<div id="project_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+				<ol class="carousel-indicators">
+					<li id="btn_mrss" data-target="#project_carousel" data-slide-to="0" class="active"></li>
+					<li id="btn_srproj" data-target="#project_carousel" data-slide-to="1"></li>
+					<li id="btn_webski" data-target="#project_carousel" data-slide-to="2"></li>
+				</ol>
 			
-			<div id="RentalShop">
-				<h3>Database Class Project (Independent)</h3>
-				<ul>
-					<li>Length: 3 months (Spring 2011)</li>
-					<li>Type: Software Development/Database/End-to-End</li>
-					<li>Point-of-sale application for the rental shop of a private ski 
-						school at Snoqualmie Pass. Programed in Visual Studio with C# and using 
-						a Microsoft Access database with SQL (OLEDB). The program tracks all of 
-						the renters and equipment and handles all sales transactions.</li>
-					<li>Features:</li>
-					<ul>
-						<li>Quick interface for high traffic volume</li>
-						<li>Comprehensive search for customers and equipment</li>
-						<li>Fast selection-based search for equipment</li>
-						<li>Automatic backup</li>
-						<li>End-of-Day sales print and inventory check</li>
-					</ul>
-					<li>
-						<a href="./documents/DBProjectPresentation.pdf" target="_blank">
-							<u>View Halfway Presentation</u>
-						</a>
-					</li>
-					<li>
-						<a href="./documents/DBProjectWriteUp.pdf" target="_blank">
-							<u>View Documentation</u>
-						</a>
-					</li>
-				</ul>
-				<img style="margin-left:50px;height:250px;margin-bottom:35px;" src="images/logos/WebbskiLogo.gif" />
-				<br />
+				<!-- Wrapper for slides -->
+				<div id="project_carousel_inner" class="carousel-inner" role="listbox">
+					<div id="mRSS" class="item active">
+						<h3>UWTV Internship Project (Independent)</h3>	
+						<ul>
+							<li>Length: 2.5 months (Summer 2011)</li>
+							<li>Type: Software Tool Development/End-to-End</li>
+							<li>Summary: This system automates the process of generating MRSS 
+								code for media to connect it to the “Platform”, which streams the media 
+								online. Work completed in Visual Studio using C# and utilizing an SQL 
+								database.</li>
+							<li>Features:</li>
+							<ul>
+								<li>Built-in security for server and platform access</li>
+								<li>Created dynamic UI features giving user the most options for user</li>
+								<li>Custom advanced settings allow for quickly performing repetitive 
+									actions</li>
+								<li>Includes a built-in help interface for new users</li>
+								<li>Built comprehensively for future expansion to other departments</li>
+							</ul>
+							<li>
+								<a href="./documents/Mrss_Generator_Presentation.pdf" target="_blank">
+									<u>View Presentation</u>
+								</a>
+							</li>
+							<li>
+								<a href="./documents/MRSSProjectWriteup.pdf" target="_blank">
+									<u>View Documentation</u>
+								</a>
+							</li>
+						</ul>
+						<img style="height:250px;margin-left:50px;margin-bottom:35px;" src="images/logos/mainLogo.gif" />
+						<br />
+					</div>
+
+					<div id="seniorProject" class="item">
+						<h3>CWU Senior Project (Team Lead)</h3>
+						<ul>
+							<li>Length: 6 Months (Fall & Winter of 2010)</li>
+							<li>Type: Software Development/UX/End-to-End</li>
+							<li>Summary: Project to create a program that organizes all 
+								equipment for Biology, Chemistry, and Geology departments at CWU. 
+								Created in Visual Studio with C# using a Microsoft Access Database 
+								with SQL (OLEDB).</li>
+							<li>Features:</li>
+							<ul>
+								<li>Tier selection, comprehensive, map, and barcode-scan search methods</li>
+								<li>Created fully-interactive map in C# using building blueprints</li>
+								<ul>
+									<li>Dynamic symbols for equipment loaded from DB in real-time</li>
+								</ul>
+								<li>Equipment maintenance alert system for admin</li>
+								<li>Built-in Calendar for admin</li>
+								<li>Included barcode scanning and creation</li>
+								<li>Import capability from Microsoft Excel</li>
+								<li>Created custom user-defined detailed printouts</li>
+								<li>Built-in network permissions using Windows Login</li>
+							</ul>
+							<li>
+								<a href="./documents/SeniorProjectUserManual.pdf" target="_blank">
+									<u>View Documentation</u>
+								</a>
+							</li>
+						</ul>
+						<img style="margin-left:50px;height:250px;margin-bottom:35px;" src="images/logos/seniorProj.gif" />
+						<br />
+					</div>
+
+					<div id="webski" class="item">
+						<h3>Database Class Project (Independent)</h3>
+						<ul>
+							<li>Length: 3 months (Spring 2011)</li>
+							<li>Type: Software Development/Database/End-to-End</li>
+							<li>Point-of-sale application for the rental shop of a private ski 
+								school at Snoqualmie Pass. Programed in Visual Studio with C# and using 
+								a Microsoft Access database with SQL (OLEDB). The program tracks all of 
+								the renters and equipment and handles all sales transactions.</li>
+							<li>Features:</li>
+							<ul>
+								<li>Quick interface for high traffic volume</li>
+								<li>Comprehensive search for customers and equipment</li>
+								<li>Fast selection-based search for equipment</li>
+								<li>Automatic backup</li>
+								<li>End-of-Day sales print and inventory check</li>
+							</ul>
+							<li>
+								<a href="./documents/DBProjectPresentation.pdf" target="_blank">
+									<u>View Halfway Presentation</u>
+								</a>
+							</li>
+							<li>
+								<a href="./documents/DBProjectWriteUp.pdf" target="_blank">
+									<u>View Documentation</u>
+								</a>
+							</li>
+						</ul>
+						<img style="margin-left:50px;height:250px;margin-bottom:35px;" src="images/logos/WebbskiLogo.gif" />
+						<br />
+					</div>
+				</div>
+				
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#project_carousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#project_carousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+
+			
+			
+			
 		</div>
 	</body>
 </html>
