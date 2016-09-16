@@ -1,6 +1,6 @@
 // TODO: When the page gets to the point when it scales virtically
 function setNavigation(page) {
-	var nav = '<nav class="navbar navbar-inverse navbar-fixed-top">';
+	var nav = '<nav class="navbar navbar-inverse">';
 	nav += '<div class="container-fluid">';
 	nav += '<div class="navbar-header">';
 	nav += '<a class="navbar-brand" href="Home.html">Andy Rose</a>';
@@ -26,4 +26,10 @@ function setNavigation(page) {
 			item.className = "inactive";
 		}
 	});
+}
+
+function setHomeNav() {
+	setNavigation('home');
+	$(".navbar-brand")[0].remove();
+	$(".navbar").css("text-align", "center");
 }

@@ -10,9 +10,25 @@
 		max-width: 500px;
 	}
 	
+	.home-bg {
+		background:url("../images/backgrounds/Snoqualmie.png") no-repeat center;
+		background-size: 100% auto;
+	}
+	
+	#img_profile
+	{
+		display: inline-flex;
+	}
+	
 	#navMenu
 	{
 		height:50px;
+	}
+	
+	.home-nav 
+	{
+		position: relative;
+		margin-top: 50px; 
 	}
 
 	#info_container
