@@ -180,6 +180,12 @@
 		background:url("../images/logos/chefLogo.png") no-repeat scroll center;
 		background-size: 100%;
 	}
+	
+	#btn_wavefront
+	{
+		background:url("../images/logos/wavefrontLogo2.png") no-repeat scroll center;
+		background-size: 100%;
+	}
 }
 
 @media handheld

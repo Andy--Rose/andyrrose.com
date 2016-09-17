@@ -22,21 +22,45 @@
 		<div class="container-fluid">
 			<div id="project_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
 				<ol class="carousel-indicators">
-					<li id="btn_opsdash" data-target="#project_carousel" data-slide-to="0" class="active"></li>
-					<li id="btn_chef" data-target="#project_carousel" data-slide-to="1" class="active"></li>
-					<li id="btn_mrss" data-target="#project_carousel" data-slide-to="2"></li>
-					<li id="btn_srproj" data-target="#project_carousel" data-slide-to="3"></li>
-					<li id="btn_webski" data-target="#project_carousel" data-slide-to="4"></li>
+					<li id="btn_wavefront" data-target="#project_carousel" data-slide-to="0" class="active"></li>
+					<li id="btn_opsdash" data-target="#project_carousel" data-slide-to="1"></li>
+					<li id="btn_chef" data-target="#project_carousel" data-slide-to="2"></li>
+					<li id="btn_mrss" data-target="#project_carousel" data-slide-to="3"></li>
+					<li id="btn_srproj" data-target="#project_carousel" data-slide-to="4"></li>
+					<li id="btn_webski" data-target="#project_carousel" data-slide-to="5"></li>
 				</ol>
 			
 				<!-- Wrapper for slides -->
 				<div id="project_carousel_inner" class="carousel-inner" role="listbox">
-					<div id="opsDash" class="item active">
+					<div id="wavefront" class="item active">
+						<h3>Medallia: Migration from Zabbix to Wavefront (CollectD)</h3>	
+						<ul>
+							<li>Year: 2016</li>
+							<li>Type: Monitoring Migration</li>
+							<li>Technologies: CollectD and Wavefront</li>
+							<li>
+								Summary: On a team of two tasked with migrating production monitors to a 
+								new application. This included analyzing, updating, converting, and configuring 
+								new monitors using CollectD from the existing Zabbix solution.
+							</li>
+							<li>Features:</li>
+							<ul>
+								<li>Investigate and set up proxy servers for new monitoring tool</li>
+								<li>Investigate and convert all existing metrics to the CollectD equivalent</li>
+								<li>Modify Chef and Puppet environments to run CollectD for metrics</li>
+								<li>Create alerts and dashboards</li>
+								<li>Document new process and update L1 support documents</li>
+							</ul>
+						</ul>
+						<img style="height:250px;margin-left:50px;margin-bottom:35px;" src="images/logos/wavefrontLogo.png" />
+					</div>
+					
+					<div id="opsDash" class="item">
 						<h3>Infospace: Operations Dashboard</h3>
 						<ul>
 							<li>Year: 2012-2015</li>
 							<li>Type: Web Application</li>
-							<li>Language: C#, .NET MVC, Javascript, HTML5, CSS3</li>
+							<li>Technologies: C#, .NET MVC, Javascript, HTML5, CSS3</li>
 							<li>Summary: Internal application bringing information from many applications
 								into one place. Eventually, features were also added, making it into a 
 								service. Examples of information include metrics, oncall schedules, alerting
@@ -80,7 +104,7 @@
 						<ul>
 							<li>Year: 2013</li>
 							<li>Type: Configuration Management and Automation</li>
-							<li>Language: Chef, Ruby, Powershell</li>
+							<li>Technologies: Chef, Ruby, Powershell</li>
 							<li>
 								Summary: Automates the provisioning and configuration of applications to 
 								servers in the cloud. Provides the ability for applications to be deployed 
@@ -96,7 +120,6 @@
 							</ul>
 						</ul>
 						<img style="height:250px;margin-left:50px;margin-bottom:35px;" src="images/logos/chefLogo.png" />
-						<br />
 					</div>
 					
 					<div id="mRSS" class="item">
@@ -129,7 +152,6 @@
 							</li>
 						</ul>
 						<img style="height:250px;margin-left:50px;margin-bottom:35px;" src="images/logos/mainLogo.gif" />
-						<br />
 					</div>
 
 					<div id="seniorProject" class="item">
@@ -162,7 +184,6 @@
 							</li>
 						</ul>
 						<img style="margin-left:50px;height:250px;margin-bottom:35px;" src="images/logos/seniorProj.gif" />
-						<br />
 					</div>
 
 					<div id="webski" class="item">
@@ -194,7 +215,6 @@
 							</li>
 						</ul>
 						<img style="margin-left:50px;height:250px;margin-bottom:35px;" src="images/logos/WebbskiLogo.gif" />
-						<br />
 					</div>
 				</div>
 				
