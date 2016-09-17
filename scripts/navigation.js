@@ -20,7 +20,7 @@ function getNavigationHtml() {
 	nav += '<span class="icon-bar"></span>';
 	nav += '<span class="icon-bar"></span>';
 	nav += '</button>';
-	nav += '<a class="navbar-brand" href="./Home.html">Andy Rose</a>';
+	nav += '<a id="home" class="navbar-brand" href="./Home.html">Andy Rose</a>';
 	nav += '</div>';
 	nav += '<div class="collapse navbar-collapse" id="navigationbar">';
 	nav += '<ul class="nav navbar-nav">';
@@ -38,7 +38,9 @@ function getNavigationHtml() {
 
 function setHomeNav() {
 	setNavigation('home');
-	$(".navbar-brand")[0].remove();
-	$(".navbar").css("display", "inline-block");
-    $(".navbar").css("float", "none");
+	$(".navbar-brand").each(function() {
+		$(this).remove()
+	});
+	$("#navMenu").find(".navbar").css("display", "inline-block");
+    $("#navMenu").find(".navbar").css("float", "none");
 }
