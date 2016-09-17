@@ -186,6 +186,12 @@
 		background:url("../images/logos/wavefrontLogo2.png") no-repeat scroll center;
 		background-size: 100%;
 	}
+	
+	#btn_docker
+	{
+		background:url("../images/logos/dockerLogo.png") no-repeat scroll center;
+		background-size: 100%;
+	}
 }
 
 @media handheld

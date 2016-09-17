@@ -22,17 +22,40 @@
 		<div class="container-fluid">
 			<div id="project_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
 				<ol class="carousel-indicators">
-					<li id="btn_wavefront" data-target="#project_carousel" data-slide-to="0" class="active"></li>
-					<li id="btn_opsdash" data-target="#project_carousel" data-slide-to="1"></li>
-					<li id="btn_chef" data-target="#project_carousel" data-slide-to="2"></li>
-					<li id="btn_mrss" data-target="#project_carousel" data-slide-to="3"></li>
-					<li id="btn_srproj" data-target="#project_carousel" data-slide-to="4"></li>
-					<li id="btn_webski" data-target="#project_carousel" data-slide-to="5"></li>
+					<li id="btn_docker" data-target="#project_carousel" data-slide-to="0" class="active"></li>
+					<li id="btn_wavefront" data-target="#project_carousel" data-slide-to="1"></li>
+					<li id="btn_opsdash" data-target="#project_carousel" data-slide-to="2"></li>
+					<li id="btn_chef" data-target="#project_carousel" data-slide-to="3"></li>
+					<li id="btn_mrss" data-target="#project_carousel" data-slide-to="4"></li>
+					<li id="btn_srproj" data-target="#project_carousel" data-slide-to="5"></li>
+					<li id="btn_webski" data-target="#project_carousel" data-slide-to="6"></li>
 				</ol>
 			
 				<!-- Wrapper for slides -->
 				<div id="project_carousel_inner" class="carousel-inner" role="listbox">
-					<div id="wavefront" class="item active">
+				
+					<div id="docker" class="item active">
+						<h3>Medallia: 3rd Party Application Monitoring in Container</h3>	
+						<ul>
+							<li>Year: 2016</li>
+							<li>Type: Container-based CollectD Implementation</li>
+							<li>Technologies: Docker, Mesos, Aurora, CollectD</li>
+							<li>
+								Summary: Configure CollectD to run on a server hosting a 3rd party application 
+								while avoiding "Zombie" processes.
+							</li>
+							<li>Features:</li>
+							<ul>
+								<li>Custom Docker init script to run multiple application PIDs from PID 1</li>
+								<li>If any child process failed, the container would be destroyed as expected</li>
+								<li>Modified entry point for container in Aurora job</li>
+								<li>Deployed and tested in Mesos cluster</li>
+							</ul>
+						</ul>
+						<img style="height:250px;margin-left:50px;margin-bottom:35px;" src="images/logos/dockerMesosAuroraLogo.png" />
+					</div>
+
+					<div id="wavefront" class="item">
 						<h3>Medallia: Migration from Zabbix to Wavefront (CollectD)</h3>	
 						<ul>
 							<li>Year: 2016</li>
@@ -128,7 +151,7 @@
 							<li>Year: 2011)</li>
 							<li>Type: Software Tool Development/End-to-End</li>
 							<li>Summary: This system automates the process of generating MRSS 
-								code for media to connect it to the “Platform”, which streams the media 
+								code for media to connect it to the "Platform", which streams the media 
 								online. Work completed in Visual Studio using C# and utilizing an SQL 
 								database.</li>
 							<li>Features:</li>
