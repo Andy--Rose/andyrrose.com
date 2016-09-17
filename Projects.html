@@ -22,19 +22,43 @@
 		<div class="container-fluid">
 			<div id="project_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
 				<ol class="carousel-indicators">
-					<li id="btn_docker" data-target="#project_carousel" data-slide-to="0" class="active"></li>
-					<li id="btn_wavefront" data-target="#project_carousel" data-slide-to="1"></li>
-					<li id="btn_opsdash" data-target="#project_carousel" data-slide-to="2"></li>
-					<li id="btn_chef" data-target="#project_carousel" data-slide-to="3"></li>
-					<li id="btn_mrss" data-target="#project_carousel" data-slide-to="4"></li>
-					<li id="btn_srproj" data-target="#project_carousel" data-slide-to="5"></li>
-					<li id="btn_webski" data-target="#project_carousel" data-slide-to="6"></li>
+					<li id="btn_alertmgmt" data-target="#project_carousel" data-slide-to="0" class="active"></li>
+					<li id="btn_docker" data-target="#project_carousel" data-slide-to="1"></li>
+					<li id="btn_wavefront" data-target="#project_carousel" data-slide-to="2"></li>
+					<li id="btn_opsdash" data-target="#project_carousel" data-slide-to="3"></li>
+					<li id="btn_chef" data-target="#project_carousel" data-slide-to="4"></li>
+					<li id="btn_mrss" data-target="#project_carousel" data-slide-to="5"></li>
+					<li id="btn_srproj" data-target="#project_carousel" data-slide-to="6"></li>
+					<li id="btn_webski" data-target="#project_carousel" data-slide-to="7"></li>
 				</ol>
 			
 				<!-- Wrapper for slides -->
 				<div id="project_carousel_inner" class="carousel-inner" role="listbox">
-				
-					<div id="docker" class="item active">
+					<div id="alert_mgmt" class="item active">
+						<h3>Medallia: Alert Management Project</h3>
+						<ul>
+							<li>Year: 2016</li>
+							<li>Type: REST API</li>
+							<li>Technologies: Go</li>
+							<li>
+								Summary: Created a stateless application to manage production alerting using 
+								templates. Application works by generating expected alerts using templates, 
+								getting existing alerts using API, and determining action based on comparison 
+								of existing alerts vs. expected alerts. Tagging features in monitoring application 
+								are referenced instead of managing a DB, allowing the application to be stateless. 
+								Deployed in AWS using ElasticBeanstalk.
+							</li>
+							<li>Features:</li>
+							<ul>
+								<li>Alert provisioning using templates</li>
+								<li>Alert management using templates and monitoring application state</li>
+								<li>Built to be used with any automation solutions</li>
+							</ul>
+						</ul>
+						<img style="height:250px;margin-left:50px;margin-bottom:35px;" src="images/logos/goLogo.png" />
+					</div>
+
+					<div id="docker" class="item">
 						<h3>Medallia: 3rd Party Application Monitoring in Container</h3>
 						<ul>
 							<li>Year: 2016</li>

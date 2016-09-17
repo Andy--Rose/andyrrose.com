@@ -192,6 +192,12 @@
 		background:url("../images/logos/dockerLogo.png") no-repeat scroll center;
 		background-size: 100%;
 	}
+	
+	#btn_alertmgmt
+	{
+		background:url("../images/logos/goIcon.png") no-repeat scroll center;
+		background-size: 100%;
+	}
 }
 
 @media handheld
