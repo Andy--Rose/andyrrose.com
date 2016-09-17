@@ -99,6 +99,7 @@
 	.carousel-indicators
 	{
 		top:-50px;
+		max-height:50px;
 	}
 	
 	.carousel-indicators > li 
@@ -144,7 +145,7 @@
 		background-size: 100%;
 	}
 	
-	#btn_infospace
+	#btn_infospace, #btn_opsdash
 	{
 		background:url("../images/logos/InfospaceLogo.png") no-repeat scroll center;
 		background-size: 100%;

@@ -22,14 +22,59 @@
 		<div class="container-fluid">
 			<div id="project_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
 				<ol class="carousel-indicators">
-					<li id="btn_mrss" data-target="#project_carousel" data-slide-to="0" class="active"></li>
-					<li id="btn_srproj" data-target="#project_carousel" data-slide-to="1"></li>
-					<li id="btn_webski" data-target="#project_carousel" data-slide-to="2"></li>
+					<li id="btn_opsdash" data-target="#project_carousel" data-slide-to="0" class="active"></li>
+					<li id="btn_mrss" data-target="#project_carousel" data-slide-to="1"></li>
+					<li id="btn_srproj" data-target="#project_carousel" data-slide-to="2"></li>
+					<li id="btn_webski" data-target="#project_carousel" data-slide-to="3"></li>
 				</ol>
 			
 				<!-- Wrapper for slides -->
 				<div id="project_carousel_inner" class="carousel-inner" role="listbox">
-					<div id="mRSS" class="item active">
+					<div id="opsDash" class="item active">
+						<h3>Infospace: Operations Dashboard</h3>
+						<ul>
+							<li>Length: Ongoing until 2015</li>
+							<li>Type: Web Application</li>
+							<li>Language: C#, .NET MVC, Javascript, HTML5, CSS3</li>
+							<li>Summary: Internal application bringing information from many applications
+								into one place. Eventually, features were also added, making it into a 
+								service. Examples of information include metrics, oncall schedules, alerting
+								configurations, and much more. There is even a sales interface tying operations 
+								with sales. I was responsible for about 80% of the code of the application.</li>
+							<li>Features:</li>
+							<ul>
+								<li>Sales interface providing partner-specific operational data</li>
+								<li>Dashboards for metric visibility</li>
+								<li>Create and save custom dashboards using the interface</li>
+								<li>Ability to change configurations for other applications</li>
+								<li>"Pretty" visualization dashboards for upper mgmt</li>
+								<li>Quick mechanism to send Code Red notifications with a few clicks</li>
+								<li>Abstracted page creation so new pages only took a few lines of code</li>
+								<li>In-house anomaly detection logic</li>
+								<li>Works on mobile</li>
+								<li>API availability for queries from other applications</li>
+							</ul>
+						</ul>
+						<b><u>Video Content</u></b> (Please excuse the terrible screen capturing software)<br />
+						<p class="bg-warning">All content in videos is fake testing content.</p>
+						<button type="button" class="btn-primary" onclick="embedProjectVideo('./videos/OperationsDashboard.mp4')">
+							Operations Pages
+						</button>  (VERY poor quality video)
+						<br />
+						<button type="button" class="btn-primary" onclick="embedProjectVideo('./videos/SalesOps.mp4')">
+							Sales Interactive Page
+						</button>
+						<br />
+						<button type="button" class="btn-primary" onclick="embedProjectVideo('./videos/SalesDash.mp4')">
+							Sales Dashboard
+						</button>
+						<br />
+						<button type="button" class="btn-primary" onclick="embedProjectVideo('./videos/CompanyDash.mp4')">
+							Company Dashboard
+						</button>
+					</div>
+					
+					<div id="mRSS" class="item">
 						<h3>UWTV Internship Project (Independent)</h3>	
 						<ul>
 							<li>Length: 2.5 months (Summer 2011)</li>
@@ -138,21 +183,20 @@
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-			
-
-			
-			
-			
+			<div id="project_video" class="embed-responsive embed-responsive-16by9">
+				<!-- <video>
+					<source src="./videos/movie.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			 --></div>
 		</div>
 	</body>
+	<script type="text/javascript">
+	function embedProjectVideo(url) {
+		var html = '<video controls="controls" autoplay>';
+		html += '<source src="' + url + '">';
+		html += '</video>';
+		document.getElementById("project_video").innerHTML = html;
+	}
+	</script>
 </html>
