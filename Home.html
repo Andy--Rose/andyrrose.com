@@ -21,8 +21,8 @@
 		<script src="scripts/navigation.js" ></script>
 	</head>
 
-	<body id="home_body">
-		<div id="home_container" class="container-fluid home-bg">
+	<body id="home_body" class="home-bg">
+		<div id="home_container" class="container-fluid">
 			<div id="navMenuXS" class="visible-xs">
 				<script type="text/javascript">
 					document.write(getNavigationHtml());
@@ -31,6 +31,7 @@
 					$("#navMenuXS").find("nav").css("position", "absolute");
 				</script>
 			</div>
+			<div id="phone_headroom" class="visible-xs"></div>
 			<div id="container_profile_img" class="text-center">
 				<img id="img_profile" class="img-circle img-responsive" src="images/pictures/Profile_Evans.png" />
 			</div>
