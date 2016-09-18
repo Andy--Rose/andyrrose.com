@@ -107,17 +107,31 @@
 		height:80%;
 	}
 	
+	.info-header
+	{
+		font-family:"Trebuchet MS", Helvetica, sans-serif;
+		color:#505050;
+	}
+	
 	.info-inner
 	{
 		display:none;
+		padding-left:15px;
+		padding-right:15px;
+		font-size:1.2em;
 	}
 	
 	.info-inner > img
 	{
 		display:block;
 		margin:auto;
-		max-height:30%;
+		max-height:200px;
 		max-width:80%;
+	}
+	
+	.info-inner > .img-sports
+	{
+		max-height:100px;
 	}
 	
 	#info_profile
