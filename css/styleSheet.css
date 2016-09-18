@@ -10,6 +10,12 @@
 		max-width: 500px;
 	}
 	
+	.row > div
+	{
+		margin-left:15px;
+		margin-right:15px;
+	}
+	
 	.container-fluid 
 	{
 		padding-left:0;
@@ -131,12 +137,6 @@
 	#info_gaming
 	{
 		background-color:#FFCC00;
-	}
-	
-	
-	#skill_container
-	{
-		text-align:center;
 	}
 	
 	.carousel
