@@ -213,12 +213,24 @@
 		border-radius:0;
 	}
 	
+	.carousel-inner > .item > img
+	{
+		max-height:200px;
+		max-width:60%;
+	}
+	
 	.rotate180 {
 		-webkit-transform: rotate(180deg);
 		-moz-transform: rotate(180deg);
 		-o-transform: rotate(180deg);
 		-ms-transform: rotate(180deg);
 		transform: rotate(180deg);
+	}
+	
+	.img-project
+	{
+		align:middle;
+		margin:auto;
 	}
 	
 	#btn_medallia
