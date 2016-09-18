@@ -78,14 +78,61 @@
 	
 	.home-nav 
 	{
-		margin-top: 50px; 
+		margin-top:50px; 
 		text-align:center;
 	}
 
-	#info_container
+	.info-container
 	{
+		width:150px;
+		height:150px;
+		float:left;
 		text-align:center;
+		margin:15px;
+		padding-top:30px;
+		overflow:scroll;
+		cursor:pointer;
 	}
+	
+	.info-container > .active
+	{
+		width:60%;
+		height:80%;
+	}
+	
+	.info-inner
+	{
+		display:none;
+	}
+	
+	#info_profile
+	{
+		background-color:#FF9900;
+	}
+	
+	#info_snowboard
+	{
+		background-color:#A14472;
+	}
+	
+	
+	#info_music
+	{
+		background-color:#008AE6;
+	}
+	
+	
+	#info_sports
+	{
+		background-color:#4AB86E;
+	}
+	
+	
+	#info_gaming
+	{
+		background-color:#FFCC00;
+	}
+	
 	
 	#skill_container
 	{
