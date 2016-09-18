@@ -91,6 +91,26 @@
 	{
 		text-align:center;
 	}
+
+	.gridster > ul > li
+	{
+		list-style-type:none;
+		background-color:grey;
+	}
+	
+	.widget_container
+	{
+		margin:0;
+		padding:10px;
+		height:100%;
+		width:100%;
+	}
+	
+	.widget_container > img
+	{
+		max-height:150px;
+		max-width:150px;
+	}
 	
 	.carousel
 	{
@@ -211,7 +231,7 @@
 		background-size: 100%;
 	}
 }
-
+/* 
 @media handheld
 {
 	img#snow
@@ -220,4 +240,4 @@
 		margin-left:0;
 		margin-top:-10px;
 	}
-}
+} */
