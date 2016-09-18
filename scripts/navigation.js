@@ -11,7 +11,7 @@ function setNavigation(page) {
 }
 
 function getNavigationHtml() {
-	var nav = '<nav class="navbar navbar-default navbar-inverse" role="navigation">';
+	var nav = '<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">';
 	nav += '<div class="container-fluid" id="navfluid">';
 	nav += '<div class="navbar-header">';
 	nav += '<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">';

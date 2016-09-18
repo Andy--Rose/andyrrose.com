@@ -16,8 +16,9 @@
 		margin-right:15px;
 	}
 	
-	.container-fluid 
+	.container-main 
 	{
+		margin-top:50px;
 		padding-left:0;
 		padding-right:0;
 	}
