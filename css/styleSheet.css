@@ -112,6 +112,14 @@
 		display:none;
 	}
 	
+	.info-inner > img
+	{
+		display:block;
+		margin:auto;
+		max-height:30%;
+		max-width:80%;
+	}
+	
 	#info_profile
 	{
 		background-color:#FF9900;
