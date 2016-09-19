@@ -165,23 +165,34 @@
 	.carousel
 	{
 		margin-top: 100px;
+		text-align:center;
 	}
 	
 	.carousel-inner 
 	{
-		left:15%;
+		margin:auto;
 		width:60%;
 	}
 	
 	.carousel-inner > .item
 	{
 		min-height:400px;
+		margin:auto;	
+		text-align:left;
+	}
+	
+	.carousel-inner > .item > img
+	{
+		max-height:200px;
+		max-width:60%;
 	}
 	
 	.carousel-indicators
 	{
 		top:-50px;
 		max-height:50px;
+		width:90%;
+		left:35%;
 	}
 	
 	.carousel-indicators > li 
@@ -211,12 +222,6 @@
 		width:30px;
 		border-bottom: 3px solid #333;
 		border-radius:0;
-	}
-	
-	.carousel-inner > .item > img
-	{
-		max-height:200px;
-		max-width:60%;
 	}
 	
 	.rotate180 {

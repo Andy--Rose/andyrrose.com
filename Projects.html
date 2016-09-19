@@ -35,262 +35,336 @@
 				<!-- Wrapper for slides -->
 				<div id="project_carousel_inner" class="carousel-inner" role="listbox">
 					<div id="alert_mgmt" class="item active">
-						<h3>Medallia: Alert Management Project</h3>
-						<ul>
-							<li>Year: 2016</li>
-							<li>Type: REST API</li>
-							<li>Technologies: <span class="badge">Go</span></li>
-							<li>
-								Summary: Created a stateless application to manage production alerting using 
-								templates. Application works by generating expected alerts using templates, 
-								getting existing alerts using API, and determining action based on comparison 
-								of existing alerts vs. expected alerts. Tagging features in monitoring application 
-								are referenced instead of managing a DB, allowing the application to be stateless. 
-								Deployed in AWS using ElasticBeanstalk.
-							</li>
-							<li>Features:</li>
-							<ul>
-								<li>Alert provisioning using templates</li>
-								<li>Alert management using templates and monitoring application state</li>
-								<li>Built to be used with any automation solutions</li>
-							</ul>
-						</ul>
+						<div class="panel-group">
+							<div class="panel panel-default">
+								<div class="panel-heading"><h3>Alert MGMT</h3></div>
+								<div class="panel-body">
+									Year: 2016<br />
+									Type: REST API<br />
+									Technologies: <span class="badge">Go</span>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Summary</div>
+								<div class="panel-body">
+									Created a stateless application to manage production alerting using 
+									templates. Application works by generating expected alerts using templates, 
+									getting existing alerts using API, and determining action based on comparison 
+									of existing alerts vs. expected alerts. Tagging features in monitoring application 
+									are referenced instead of managing a DB, allowing the application to be stateless. 
+									Deployed in AWS using ElasticBeanstalk.
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Features</div>
+								<div class="panel-body">Alert provisioning using templates</div>
+								<div class="panel-body">Alert management using templates and monitoring application state</div>
+								<div class="panel-body">Built to be used with any automation solutions</div>
+							</div>
+						</div>
 						<img class="img-responsive center-block" src="images/logos/goLogo.png" />
 					</div>
 
 					<div id="docker" class="item">
-						<h3>Medallia: 3rd Party Application Monitoring in Container</h3>
-						<ul>
-							<li>Year: 2016</li>
-							<li>Type: Container-based CollectD Implementation</li>
-							<li>Technologies: 
-								<span class="badge">Docker</span>
-								<span class="badge">Mesos</span>
-								<span class="badge">Aurora</span>
-								<span class="badge">CollectD</span>
-							</li>
-							<li>
-								Summary: Configure CollectD to run on a server hosting a 3rd party application 
-								while avoiding "Zombie" processes.
-							</li>
-							<li>Features:</li>
-							<ul>
-								<li>Custom Docker init script to run multiple application PIDs from PID 1</li>
-								<li>If any child process failed, the container would be destroyed as expected</li>
-								<li>Modified entry point for container in Aurora job</li>
-								<li>Deployed and tested in Mesos cluster</li>
-							</ul>
-						</ul>
+						<div class="panel-group">
+							<div class="panel panel-default">
+								<div class="panel-heading"><h3>Container Process MGMT</h3></div>
+								<div class="panel-body">
+									Year: 2016<br />
+									Type: Container-based CollectD Implementation<br />
+									Technologies: 
+										<span class="badge">Docker</span>
+										<span class="badge">Mesos</span>
+										<span class="badge">Aurora</span>
+										<span class="badge">CollectD</span>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Summary</div>
+								<div class="panel-body">
+									Configure CollectD to run on a server hosting a 3rd party application 
+									while avoiding "Zombie" processes.
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Features</div>
+								<div class="panel-body">Custom Docker init script to run multiple application PIDs from PID 1</div>
+								<div class="panel-body">If any child process failed, the container would be destroyed as expected</div>
+								<div class="panel-body">Modified entry point for container in Aurora job</div>
+								<div class="panel-body">Deployed and tested in Mesos cluster</div>
+							</div>
+						</div>
 						<img class="img-responsive center-block" src="images/logos/dockerMesosAuroraLogo.png" />
 					</div>
 
 					<div id="wavefront" class="item">
-						<h3>Medallia: Migration from Zabbix to Wavefront (CollectD)</h3>	
-						<ul>
-							<li>Year: 2016</li>
-							<li>Type: Monitoring Migration</li>
-							<li>Technologies: 
-								<span class="badge">CollectD</span>
-								<span class="badge">Wavefront</span>
-							</li>
-							<li>
-								Summary: On a team of two tasked with migrating production monitors to a 
-								new application. This included analyzing, updating, converting, and configuring 
-								new monitors using CollectD from the existing Zabbix solution.
-							</li>
-							<li>Features:</li>
-							<ul>
-								<li>Investigate and set up proxy servers for new monitoring tool</li>
-								<li>Investigate and convert all existing metrics to the CollectD equivalent</li>
-								<li>Modify Chef and Puppet environments to run CollectD for metrics</li>
-								<li>Create alerts and dashboards</li>
-								<li>Document new process and update L1 support documents</li>
-							</ul>
-						</ul>
+						<div class="panel-group">
+							<div class="panel panel-default">
+								<div class="panel-heading"><h3>Monitoring Migration</h3></div>
+								<div class="panel-body">
+									Year: 2016<br />
+									Type: Monitoring Migration<br />
+									Technologies: 
+										<span class="badge">CollectD</span>
+										<span class="badge">Wavefront</span>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Summary</div>
+								<div class="panel-body">
+									On a team of two tasked with migrating production monitors to a 
+									new application. This included analyzing, updating, converting, and configuring 
+									new monitors using CollectD from the existing Zabbix solution.
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Features</div>
+								<div class="panel-body">Investigate and set up proxy servers for new monitoring tool</div>
+								<div class="panel-body">Investigate and convert all existing metrics to the CollectD equivalent</div>
+								<div class="panel-body">Modify Chef and Puppet environments to run CollectD for metrics</div>
+								<div class="panel-body">Create alerts and dashboards</div>
+								<div class="panel-body">Document new process and update L1 support documents</div>
+							</div>
+						</div>
 						<img class="img-responsive center-block" src="images/logos/wavefrontLogo.png" />
 					</div>
 					
 					<div id="opsDash" class="item">
-						<h3>Infospace: Operations Dashboard</h3>
-						<ul>
-							<li>Year: 2012-2015</li>
-							<li>Type: Web Application</li>
-							<li>Technologies: 
-								<span class="badge">C#</span>
-								<span class="badge">.NET MVC</span>
-								<span class="badge">Javascript</span>
-								<span class="badge">HTML5</span>
-								<span class="badge">CSS3</span>
-							</li>
-							<li>Summary: Internal application bringing information from many applications
-								into one place. Eventually, features were also added, making it into a 
-								service. Examples of information include metrics, oncall schedules, alerting
-								configurations, and much more. There is even a sales interface tying operations 
-								with sales. I was responsible for about 80% of the code of the application.</li>
-							<li>Features:</li>
-							<ul>
-								<li>Sales interface providing partner-specific operational data</li>
-								<li>Dashboards for metric visibility</li>
-								<li>Create and save custom dashboards using the interface</li>
-								<li>Ability to change configurations for other applications</li>
-								<li>"Pretty" visualization dashboards for upper mgmt</li>
-								<li>Quick mechanism to send Code Red notifications with a few clicks</li>
-								<li>Abstracted page creation so new pages only took a few lines of code</li>
-								<li>In-house anomaly detection logic</li>
-								<li>Works on mobile</li>
-								<li>API availability for queries from other applications</li>
-							</ul>
-						</ul>
-						<b><u>Video Content</u></b> (Please excuse the terrible screen capturing software)<br />
-						<p class="bg-warning">All content in videos is fake testing content.</p>
-						<button type="button" class="btn-primary" onclick="embedProjectVideo('./videos/OperationsDashboard.mp4')">
-							Operations Pages
-						</button>  (VERY poor quality video)
-						<br />
-						<button type="button" class="btn-primary" onclick="embedProjectVideo('./videos/SalesOps.mp4')">
-							Sales Interactive Page
-						</button>
-						<br />
-						<button type="button" class="btn-primary" onclick="embedProjectVideo('./videos/SalesDash.mp4')">
-							Sales Dashboard
-						</button>
-						<br />
-						<button type="button" class="btn-primary" onclick="embedProjectVideo('./videos/CompanyDash.mp4')">
-							Company Dashboard
-						</button>
+						<div class="panel-group">
+							<div class="panel panel-default">
+								<div class="panel-heading"><h3>Operations Dashboard</h3></div>
+								<div class="panel-body">
+									Year: 2015<br />
+									Type: Web Application<br />
+									Technologies: 
+										<span class="badge">C#</span>
+										<span class="badge">.NET MVC</span>
+										<span class="badge">Javascript</span>
+										<span class="badge">JQuery</span>
+										<span class="badge">HTML5</span>
+										<span class="badge">CSS3</span>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Summary</div>
+								<div class="panel-body">
+									Internal application bringing information from many applications
+									into one place. Eventually, features were also added, making it into a 
+									service. Examples of information include metrics, oncall schedules, alerting
+									configurations, and much more. There is even a sales interface tying operations 
+									with sales. I was responsible for about 80% of the code of the application.
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Features</div>
+								<div class="panel-body">Sales interface providing partner-specific operational data</div>
+								<div class="panel-body">Dashboards for metric visibility</div>
+								<div class="panel-body">Create and save custom dashboards using the interface</div>
+								<div class="panel-body">Ability to change configurations for other applications</div>
+								<div class="panel-body">"Pretty" visualization dashboards for upper mgmt</div>
+								<div class="panel-body">Quick mechanism to send Code Red notifications with a few clicks</div>
+								<div class="panel-body">Abstracted page creation so new pages only took a few lines of code</div>
+								<div class="panel-body">In-house anomaly detection logic</div>
+								<div class="panel-body">Works on mobile</div>
+								<div class="panel-body">API availability for queries from other applications</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Video Content</div>
+								<div class="panel-body">
+									<span class="bg-warning">Please excuse the terrible screen capturing software</span><br />
+									<span class="bg-warning">All content in videos is fake testing content.</span>
+								</div>
+								<div class="panel-body">
+									<button type="button" class="btn-primary" onclick="embedProjectVideo('./videos/OperationsDashboard.mp4')">
+										Operations Pages
+									</button>  (VERY poor quality video)
+								</div>
+								<div class="panel-body">
+									<button type="button" class="btn-primary" onclick="embedProjectVideo('./videos/SalesOps.mp4')">
+										Sales Interactive Page
+									</button>
+								</div>
+								<div class="panel-body">
+									<button type="button" class="btn-primary" onclick="embedProjectVideo('./videos/SalesDash.mp4')">
+										Sales Dashboard
+									</button>
+								</div>
+								<div class="panel-body">
+									<button type="button" class="btn-primary" onclick="embedProjectVideo('./videos/CompanyDash.mp4')">
+										Company Dashboard
+									</button>
+								</div>
+							</div>
+						</div>
 					</div>
 					
 					<div id="chef" class="item">
-						<h3>Infospace: Configuration Management</h3>	
-						<ul>
-							<li>Year: 2013</li>
-							<li>Type: Configuration Management and Automation</li>
-							<li>Technologies: 
-								<span class="badge">Chef</span>
-								<span class="badge">Ruby</span>
-								<span class="badge">Powershell</span>
-							</li>
-							<li>
-								Summary: Automates the provisioning and configuration of applications to 
-								servers in the cloud. Provides the ability for applications to be deployed 
-								consistently and repeatedly. As part of this project, we also used Chef Provisioning 
-								to automate the creation of infrastructure as code.
-							</li>
-							<li>Features:</li>
-							<ul>
-								<li>Provision infrastructure</li>
-								<li>Configure applications</li>
-								<li>Provides repeatable and immutable infrastructure</li>
-								<li>Resource cookbooks with providers that talk to APIs</li>
-							</ul>
-						</ul>
+						<div class="panel-group">
+							<div class="panel panel-default">
+								<div class="panel-heading"><h3>Configuration Management</h3></div>
+								<div class="panel-body">
+									Year: 2013<br />
+									Type: Configuration Management and Automation<br />
+									Technologies: 
+										<span class="badge">Chef</span>
+										<span class="badge">Ruby</span>
+										<span class="badge">Powershell</span>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Summary</div>
+								<div class="panel-body">
+									Automates the provisioning and configuration of applications to 
+									servers in the cloud. Provides the ability for applications to be deployed 
+									consistently and repeatedly. As part of this project, we also used Chef Provisioning 
+									to automate the creation of infrastructure as code.
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Features</div>
+								<div class="panel-body">Provision infrastructure</div>
+								<div class="panel-body">Configure applications</div>
+								<div class="panel-body">Provides repeatable and immutable infrastructure</div>
+								<div class="panel-body">Resource cookbooks with providers that talk to APIs</div>
+							</div>
+						</div>
 						<img class="img-responsive center-block" src="images/logos/chefLogo.png" />
 					</div>
 					
 					<div id="mRSS" class="item">
-						<h3>UWTV Internship Project (Independent)</h3>	
-						<ul>
-							<li>Year: 2011</li>
-							<li>Type: Software Tool Development/End-to-End</li>
-							<li>Technologies: 
-								<span class="badge">C#</span>
-								<span class="badge">MSI Package Installer</span>
-							</li>
-							<li>Summary: This system automates the process of generating MRSS 
-								code for media to connect it to the "Platform", which streams the media 
-								online. Work completed in Visual Studio using C# and utilizing an SQL 
-								database.</li>
-							<li>Features:</li>
-							<ul>
-								<li>Built-in security for server and platform access</li>
-								<li>Created dynamic UI features giving user the most options for user</li>
-								<li>Custom advanced settings allow for quickly performing repetitive 
-									actions</li>
-								<li>Includes a built-in help interface for new users</li>
-								<li>Built comprehensively for future expansion to other departments</li>
-							</ul>
-							<li>
-								<a href="./documents/Mrss_Generator_Presentation.pdf" target="_blank">
-									<u>View Presentation</u>
-								</a>
-							</li>
-							<li>
-								<a href="./documents/MRSSProjectWriteup.pdf" target="_blank">
-									<u>View Documentation</u>
-								</a>
-							</li>
-						</ul>
+						<div class="panel-group">
+							<div class="panel panel-default">
+								<div class="panel-heading"><h3>UWTV Internship Project</h3></div>
+								<div class="panel-body">
+									Year: 2011<br />
+									Type: End-to-End Application<br />
+									Technologies: 
+										<span class="badge">C#</span>
+										<span class="badge">SQL</span>
+										<span class="badge">MSI Package Installer</span>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Summary</div>
+								<div class="panel-body">
+									This system automates the process of generating MRSS 
+									code for media to connect it to the "Platform", which streams the media 
+									online. Work completed in Visual Studio using C# and utilizing an SQL 
+									database.
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Features</div>
+								<div class="panel-body">Built-in security for server and platform access</div>
+								<div class="panel-body">Dynamic UI features</div>
+								<div class="panel-body">User-defined macros</div>
+								<div class="panel-body">Built-in help interface</div>
+								<div class="panel-body">Built comprehensively for future expansion to other departments</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Resources</div>
+								<div class="panel-body">
+									<a href="./documents/Mrss_Generator_Presentation.pdf" target="_blank">
+										<u>View Presentation</u>
+									</a>
+								</div>
+								<div class="panel-body">
+									<a href="./documents/MRSSProjectWriteup.pdf" target="_blank">
+										<u>View Documentation</u>
+									</a>
+								</div>
+							</div>
+						</div>
 						<img class="img-responsive center-block" src="images/logos/mainLogo.gif" />
 					</div>
 
 					<div id="seniorProject" class="item">
-						<h3>CWU Senior Project (Team Lead)</h3>
-						<ul>
-							<li>Year: 2010</li>
-							<li>Type: Software Development/UX/End-to-End</li>
-							<li>Technologies: 
-								<span class="badge">C#</span>
-								<span class="badge">OLEDB</span>
-							</li>
-							<li>Summary: Project to create a program that organizes all 
-								equipment for Biology, Chemistry, and Geology departments at CWU. 
-								Created in Visual Studio with C# using a Microsoft Access Database 
-								with SQL (OLEDB).</li>
-							<li>Features:</li>
-							<ul>
-								<li>Tier selection, comprehensive, map, and barcode-scan search methods</li>
-								<li>Created fully-interactive map in C# using building blueprints</li>
-								<ul>
-									<li>Dynamic symbols for equipment loaded from DB in real-time</li>
-								</ul>
-								<li>Equipment maintenance alert system for admin</li>
-								<li>Built-in Calendar for admin</li>
-								<li>Included barcode scanning and creation</li>
-								<li>Import capability from Microsoft Excel</li>
-								<li>Created custom user-defined detailed printouts</li>
-								<li>Built-in network permissions using Windows Login</li>
-							</ul>
-							<li>
-								<a href="./documents/SeniorProjectUserManual.pdf" target="_blank">
-									<u>View Documentation</u>
-								</a>
-							</li>
-						</ul>
+						<div class="panel-group">
+							<div class="panel panel-default">
+								<div class="panel-heading"><h3>CWU Senior Project</h3></div>
+								<div class="panel-body">
+									Year: 2010<br />
+									Type: End-to-End Application<br />
+									Role: Team Lead<br />
+									Technologies: 
+										<span class="badge">C#</span>
+										<span class="badge">OLEDB</span>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Summary</div>
+								<div class="panel-body">
+									Project to create a program that organizes all 
+									equipment for Biology, Chemistry, and Geology departments at CWU. 
+									Created in Visual Studio with C# using a Microsoft Access Database 
+									with SQL (OLEDB).
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Features</div>
+								<div class="panel-body">4 search methods</div>
+								<div class="panel-body">Interactive map with blueprints</div>
+								<div class="panel-body">Map updated real-time with symbols</div>
+								<div class="panel-body">Equipment maintenance alert system and calendar</div>
+								<div class="panel-body">Barcode scanning and printing</div>
+								<div class="panel-body">Import capability from Microsoft Excel</div>
+								<div class="panel-body">Customized printouts</div>
+								<div class="panel-body">Access control uses school Active Directory</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Resources</div>
+								<div class="panel-body">
+									<a href="./documents/SeniorProjectUserManual.pdf" target="_blank">
+										<u>View Documentation</u>
+									</a>
+								</div>
+							</div>
+						</div>
 						<img class="img-responsive center-block" src="images/logos/seniorProj.gif" />
 					</div>
 
 					<div id="webski" class="item">
-						<h3>Database Class Project (Independent)</h3>
-						<ul>
-							<li>Year: 2011</li>
-							<li>Type: Software Development/Database/End-to-End</li>
-							<li>Technologies: 
-								<span class="badge">C#</span>
-								<span class="badge">OLEDB</span>
-							</li>
-							<li>Point-of-sale application for the rental shop of a private ski 
-								school at Snoqualmie Pass. Programed in Visual Studio with C# and using 
-								a Microsoft Access database with SQL (OLEDB). The program tracks all of 
-								the renters and equipment and handles all sales transactions.</li>
-							<li>Features:</li>
-							<ul>
-								<li>Quick interface for high traffic volume</li>
-								<li>Comprehensive search for customers and equipment</li>
-								<li>Fast selection-based search for equipment</li>
-								<li>Automatic backup</li>
-								<li>End-of-Day sales print and inventory check</li>
-							</ul>
-							<li>
-								<a href="./documents/DBProjectPresentation.pdf" target="_blank">
-									<u>View Halfway Presentation</u>
-								</a>
-							</li>
-							<li>
-								<a href="./documents/DBProjectWriteUp.pdf" target="_blank">
-									<u>View Documentation</u>
-								</a>
-							</li>
-						</ul>
+						<div class="panel-group">
+							<div class="panel panel-default">
+								<div class="panel-heading"><h3>Webbski P.O.S. Application</h3></div>
+								<div class="panel-body">
+									Year: 2011<br />
+									Type: End-to-End Application<br />
+									Technologies: 
+										<span class="badge">C#</span>
+										<span class="badge">OLEDB</span>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Summary</div>
+								<div class="panel-body">
+									Point-of-sale application for the rental shop of a private ski 
+									school at Snoqualmie Pass. The program tracks all of 
+									the renters and equipment and handles all sales transactions.
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Features</div>
+								<div class="panel-body">Optimized for quickness on outdated hardware</div>
+								<div class="panel-body">Comprehensive search for customers and equipment</div>
+								<div class="panel-body">Fast selection-based search for equipment</div>
+								<div class="panel-body">Automatic backups</div>
+								<div class="panel-body">End-of-Day sales print and inventory check</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Resources</div>
+								<div class="panel-body">
+									<a href="./documents/DBProjectPresentation.pdf" target="_blank">
+										<u>View Mid-Term Presentation</u>
+									</a>
+								</div>
+								<div class="panel-body">
+									<a href="./documents/DBProjectWriteUp.pdf" target="_blank">
+										<u>View Documentation</u>
+									</a>
+								</div>
+							</div>
+						</div>
 						<img class="img-responsive center-block" src="images/logos/WebbskiLogo.gif" />
 					</div>
 				</div>
@@ -305,12 +379,7 @@
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
-			<div id="project_video" class="embed-responsive embed-responsive-16by9">
-				<!-- <video>
-					<source src="./videos/movie.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-			 --></div>
+			<div id="project_video" class="embed-responsive embed-responsive-16by9"></div>
 		</div>
 	</body>
 	<script type="text/javascript">
