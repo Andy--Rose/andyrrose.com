@@ -175,22 +175,22 @@
 									<span class="bg-warning">All content in videos is fake testing content.</span>
 								</div>
 								<div class="panel-body">
-									<button type="button" class="btn-primary" onclick="embedProjectVideo('./videos/OperationsDashboard.mp4')">
+									<button type="button" class="btn-primary" onclick="embedProjectVideo('./videos/OperationsDashboard')">
 										Operations Pages
 									</button>  (VERY poor quality video)
 								</div>
 								<div class="panel-body">
-									<button type="button" class="btn-primary" onclick="embedProjectVideo('./videos/SalesOps.mp4')">
+									<button type="button" class="btn-primary" onclick="embedProjectVideo('./videos/SalesOps')">
 										Sales Interactive Page
 									</button>
 								</div>
 								<div class="panel-body">
-									<button type="button" class="btn-primary" onclick="embedProjectVideo('./videos/SalesDash.mp4')">
+									<button type="button" class="btn-primary" onclick="embedProjectVideo('./videos/SalesDash')">
 										Sales Dashboard
 									</button>
 								</div>
 								<div class="panel-body">
-									<button type="button" class="btn-primary" onclick="embedProjectVideo('./videos/CompanyDash.mp4')">
+									<button type="button" class="btn-primary" onclick="embedProjectVideo('./videos/CompanyDash')">
 										Company Dashboard
 									</button>
 								</div>
@@ -385,7 +385,8 @@
 	<script type="text/javascript">
 	function embedProjectVideo(url) {
 		var html = '<video controls="controls" autoplay>';
-		html += '<source src="' + url + '">';
+		html += '<source src="' + url + '.mp4">';
+		html += '<source src="' + url + '.ogg">';
 		html += '</video>';
 		document.getElementById("project_video").innerHTML = html;
 	}
