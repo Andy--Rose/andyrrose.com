@@ -385,8 +385,8 @@
 	<script type="text/javascript">
 	function embedProjectVideo(url) {
 		var html = '<video controls="controls" autoplay>';
-		html += '<source src="' + url + '.mp4">';
-		html += '<source src="' + url + '.ogg">';
+		html += '<source src="' + url + '.mp4" type="video/mp4" />';
+		html += '<source src="' + url + '.ogg" type="video/ogg" />';
 		html += '</video>';
 		document.getElementById("project_video").innerHTML = html;
 	}
