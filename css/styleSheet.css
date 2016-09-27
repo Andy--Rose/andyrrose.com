@@ -229,6 +229,25 @@
 		font-weight:bold;
 	}
 	
+	#project_video
+	{
+		width:100%;
+		text-align:center;
+	}
+		
+	.project_video_obj
+	{
+		margin:auto;
+		max-width:500px;
+		max-height:500px;
+	}
+	
+	.embed-responsive > video
+	{
+		position:relative;
+		height:auto;
+	}
+	
 	.rotate180 {
 		-webkit-transform: rotate(180deg);
 		-moz-transform: rotate(180deg);
