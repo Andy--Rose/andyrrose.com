@@ -232,6 +232,11 @@
 	#project_video
 	{
 		width:100%;
+		max-width:500px;
+		max-height:500px;
+		height:auto;
+		margin:auto;
+		padding-bottom:0;
 		text-align:center;
 	}
 		

@@ -1,3 +1,5 @@
+<!-- TODO: Make indicators static so they stay on top -->
+<!-- TODO: On small screen, make categories (i.e. Summary) collapsable -->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -383,13 +385,25 @@
 		</div>
 	</body>
 	<script type="text/javascript">
+	$(document).ready(function() {
+		$('.carousel-indicators li').click(hideVideo);
+	});
+
 	function embedProjectVideo(url) {
 		var html = '<video class="project_video_obj" controls autoplay>';
 		html += '<source src="' + url + '.mp4" type="video/mp4" />';
 		html += '<source src="' + url + '.ogg" type="video/ogg" />';
 		html += '</video>';
+		$('#project_video').show(0);
 		document.getElementById("project_video").innerHTML = html;
-		$('#project_video').hide().show(0);
+		$('body,html').animate({
+			scrollTop: $('body')[0].scrollHeight
+		}, 500)
+		//vid_container.scrollTop = vid_container.scrollHeight;
+	}
+
+	function hideVideo() {
+		$('#project_video').hide();
 	}
 	</script>
 </html>
