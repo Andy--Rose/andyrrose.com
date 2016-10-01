@@ -95,14 +95,15 @@ img, .img-responsive
 	text-align:center;
 	margin:15px;
 	padding-top:30px;
-	overflow:scroll;
+	overflow:hidden;
 	cursor:pointer;
 }
 
-.info-container > .active
+.info-container.active
 {
 	width:80%;
 	height:80%;
+	overflow:auto;
 }
 
 .info-header
@@ -130,6 +131,11 @@ img, .img-responsive
 .info-inner > .img-sports
 {
 	max-height:100px;
+}
+
+.btn-info > a
+{
+	z-index:50;
 }
 
 #info_profile
