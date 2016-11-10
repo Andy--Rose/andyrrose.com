@@ -11,28 +11,30 @@ function setNavigation(page) {
 }
 
 function getNavigationHtml() {
-	var nav = '<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">';
-	nav += '<div class="container-fluid" id="navfluid">';
-	nav += '<div class="navbar-header">';
-	nav += '<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">';
-	nav += '<span class="sr-only">Toggle Navigation</span>';
-	nav += '<span class="icon-bar"></span>';
-	nav += '<span class="icon-bar"></span>';
-	nav += '<span class="icon-bar"></span>';
-	nav += '</button>';
-	nav += '<a id="home" class="navbar-brand" href="./Home.html">Andy Rose</a>';
-	nav += '</div>';
-	nav += '<div class="collapse navbar-collapse" id="navigationbar">';
-	nav += '<ul class="nav navbar-nav">';
-	nav += '<li id="about"><a href="./About.html">About</a></li>';
-	nav += '<li id="info"><a href="./Info.html">Info/Skills</a></li>';
-	nav += '<li id="work"><a href="./Work.html">Work History</a></li>';
-	nav += '<li id="projects"><a href="./Projects.html">Projects</a></li>';
-	nav += '<li id="papers"><a href="./Papers.html">Papers</a></li>';
-	nav += '</ul>';
-	nav += '</div>';
-	nav += '</div>';
-	nav += '</nav>';
+	var nav = [
+	'<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">',
+	'<div class="container-fluid" id="navfluid">',
+	'<div class="navbar-header">',
+	'<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">',
+	'<span class="sr-only">Toggle Navigation</span>',
+	'<span class="icon-bar"></span>',
+	'<span class="icon-bar"></span>',
+	'<span class="icon-bar"></span>',
+	'</button>',
+	'<a id="home" class="navbar-brand" href="./Home.html">Andy Rose</a>',
+	'</div>',
+	'<div class="collapse navbar-collapse" id="navigationbar">',
+	'<ul class="nav navbar-nav">',
+	'<li id="about"><a href="./About.html">About</a></li>',
+	'<li id="info"><a href="./Info.html">Info/Skills</a></li>',
+	'<li id="work"><a href="./Work.html">Work History</a></li>',
+	'<li id="projects"><a href="./Projects.html">Projects</a></li>',
+	'<li id="papers"><a href="./Papers.html">Papers</a></li>',
+	'<li id="lights"><a href="./Lights.html">Lights</a></li>',
+	'</ul>',
+	'</div>',
+	'</div>',
+	'</nav>'].join('');
 	return nav;
 }
 

@@ -343,3 +343,17 @@ img, .img-responsive
 	background:url("../images/logos/goIcon.png") no-repeat scroll center;
 	background-size: 100%;
 }
+
+#btn_iotController
+{
+	background:url("../images/logos/reactjsLogo.png") no-repeat scroll center;
+	background-size: 100%;
+}
+
+#frame-lights 
+{
+	position: absolute;
+	width: 98%;
+	height: 98%;
+	overflow: none;
+}

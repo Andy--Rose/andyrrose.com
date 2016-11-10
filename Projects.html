@@ -24,18 +24,66 @@
 		<div class="container-fluid container-main">
 			<div id="project_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
 				<ol class="carousel-indicators">
-					<li id="btn_alertmgmt" data-target="#project_carousel" data-slide-to="0" class="active"></li>
-					<li id="btn_docker" data-target="#project_carousel" data-slide-to="1"></li>
-					<li id="btn_wavefront" data-target="#project_carousel" data-slide-to="2"></li>
-					<li id="btn_opsdash" data-target="#project_carousel" data-slide-to="3"></li>
-					<li id="btn_chef" data-target="#project_carousel" data-slide-to="4"></li>
-					<li id="btn_mrss" data-target="#project_carousel" data-slide-to="5"></li>
-					<li id="btn_srproj" data-target="#project_carousel" data-slide-to="6"></li>
-					<li id="btn_webski" data-target="#project_carousel" data-slide-to="7"></li>
+					<li id="btn_iotController" data-target="#project_carousel" data-slide-to="0" class="active"></li>
+					<li id="btn_alertmgmt" data-target="#project_carousel" data-slide-to="1"></li>
+					<li id="btn_docker" data-target="#project_carousel" data-slide-to="2"></li>
+					<li id="btn_wavefront" data-target="#project_carousel" data-slide-to="3"></li>
+					<li id="btn_opsdash" data-target="#project_carousel" data-slide-to="4"></li>
+					<li id="btn_chef" data-target="#project_carousel" data-slide-to="5"></li>
+					<li id="btn_mrss" data-target="#project_carousel" data-slide-to="6"></li>
+					<li id="btn_srproj" data-target="#project_carousel" data-slide-to="7"></li>
+					<li id="btn_webski" data-target="#project_carousel" data-slide-to="8"></li>
 				</ol>
 			
 				<!-- Wrapper for slides -->
 				<div id="project_carousel_inner" class="carousel-inner" role="listbox">
+					<div id="iot_controller" class="item active">
+						<div class="panel-group">
+							<div class="panel panel-default">
+								<div class="panel-heading"><h3>IoT Light Controller</h3></div>
+								<div class="panel-body">
+									Year: In Progress<br />
+									Type: Web Application<br />
+									Technologies: 
+									<span class="badge">ReactJS</span>
+									<span class="badge">react-bootstrap</span>
+									<span class="badge">JQuery</span>
+									<span class="badge">JSX/HTML</span>
+									<span class="badge">CSS3</span>
+									<span class="badge">Browserify</span>
+									<span class="badge">Babel</span>
+									<span class="badge">Axios</span>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Summary</div>
+								<div class="panel-body">
+									Application to control in-home LED installations. Currently, the front end UI 
+									skeleton is complete and I am working on configuring the back end. The plan is to send 
+									messages from the application to an in-home gateway (Raspberry PI) that sends signals 
+									over radio (nRF24L01) devices to instruct the nodes (Arduino) on what to do. For this,
+									I will utilize AWS IoT for secure sending of the messages to the gateway. The back end 
+									for the application will be handled by AWS API Gateway. The security for the 
+									application will be managed by AWS Cognito, which will require AWS permissions to 
+									control the lights in my home. Altogether, this application will run on zero servers. 
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Features</div>
+								<div class="panel-body">Choose device to send instructions</div>
+								<div class="panel-body">Power on/off lights from anywhere on any device</div>
+								<div class="panel-body">Select from any color and set a device</div>
+								<div class="panel-body">Select from presets and set a device</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">Links</div>
+								<div class="panel-body"><a href="./Lights.html">Application</a></div>
+								<div class="panel-body"><a>Infrastructure Diagram (Coming Soon)</a></div>
+							</div>
+						</div>
+						<img class="img-responsive center-block" src="images/default/iot.png" />
+					</div>
+					
 					<div id="alert_mgmt" class="item active">
 						<div class="panel-group">
 							<div class="panel panel-default">
