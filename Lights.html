@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styleSheet.css" />
+	<script src="scripts/navigation.js" ></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write(getNavigationHtml());
+		setNavigation('lights');
+	</script>
+	<div id="lights_container" class="container-fluid container-main">
+		<iframe id="frame-lights" src="http://arose-iot-light-controller.s3-website-us-west-2.amazonaws.com"></iframe>
+	</div>
+</body>
+</html>
