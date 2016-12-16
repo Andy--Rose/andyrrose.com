@@ -1,0 +1,24 @@
+{
+  "name": "andyrrose.com",
+  "version": "2.0.0",
+  "description": "Personal website featuring work.",
+  "repository": "https://github.com/Andy--Rose/andyrrose.com",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha test --recursive --watch",
+    "start": "electron ."
+  },
+  "author": "Andy Rose",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "axios": "^0.9.1",
+    "bootstrap": "^3.3.7",
+    "bower": "^1.8.0",
+  	"browserify": "^13.1.1",
+    "chai": "^3.5.0",
+    "electron-prebuilt": "^0.36.0",
+    "electron-reload": "^1.0.2",
+    "jquery": "^3.1.1",
+    "mocha": "^3.2.0"
+  }
+}
