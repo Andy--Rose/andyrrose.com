@@ -1,6 +1,7 @@
 <html ng-app="andyrrose.com">
 <head>
 	<head>
+		<base href="/">
 		<title>
 			Andrew Rose - Software Developer
 		</title>
@@ -18,22 +19,26 @@
 		<link rel="shortcut icon" type="image/icon" href="./public/img/default/icon.ico" />
 	</head>
 	<body ng-controller="IndexController">
-		<!-- <script src="./node_modules/jquery/dist/jquery.js"></script> -->
-		<script>
-		    window.jQuery = window.$ = require('jquery');
-		</script>
+		<!-- Import frameworks -->
 		<script src="./bower_components/angular/angular.js"></script>
-		<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="./bower_components/angular-route/angular-route.js"></script>
+		<script src="./node_modules/jquery/dist/jquery.js"></script>
+		<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
-		<script src="index.module.js"></script>
-		<script src="./app/components/home/home.module.js"></script>
-		<script src="./app/components/home/home.component.js"></script>
+		<!-- Import Angular Components -->
+		<script src="./index.module.js"></script>
 		<script src="./app/components/navigation/navigation.module.js"></script>
-		<script src="./app/components/navigation/navigation.component.js"></script>
+		<script src="./app/components/navigation/navigation.component.js"></script> 
+ 		<script src="./app/components/home/home.module.js"></script>
+		<script src="./app/components/home/home.component.js"></script>
+		<script src="./app/components/about/about.module.js"></script>
+		<script src="./app/components/about/about.component.js"></script>
 
+		<!-- Import Custom Scripts -->
 		<script src="./public/js/navigation.js" ></script>
+		<script src="./public/js/expandingBlocks.js" ></script>
 
 		<navigation></navigation>
-		<home></home>
+		<div ng-view class="page-view"></div>
 	</body>
 </head>

@@ -1,4 +1,7 @@
 angular.module('home', [])
-	.controller('HomeController', [ '$scope', function ($scope, $http) {
-
-	}]);
+	.controller('HomeController', ['$routeParams',
+		function HomeController($routeParams) {
+			this.name = 'HomeController';
+			this.params = $routeParams;
+		}
+	]);
