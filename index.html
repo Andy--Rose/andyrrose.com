@@ -17,7 +17,7 @@
 		<link rel="icon" type="image/icon" href="./public/img/default/icon.ico" />
 		<link rel="shortcut icon" type="image/icon" href="./public/img/default/icon.ico" />
 	</head>
-	<body ng-controller="IndexController" id="home_body" class="home-bg">
+	<body ng-controller="IndexController">
 		<!-- <script src="./node_modules/jquery/dist/jquery.js"></script> -->
 		<script>
 		    window.jQuery = window.$ = require('jquery');
@@ -26,35 +26,14 @@
 		<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 		<script src="index.module.js"></script>
-		<script src="./app/components/header/header.module.js"></script>
-		<script src="./app/components/header/header.component.js"></script>
+		<script src="./app/components/home/home.module.js"></script>
+		<script src="./app/components/home/home.component.js"></script>
 		<script src="./app/components/navigation/navigation.module.js"></script>
 		<script src="./app/components/navigation/navigation.component.js"></script>
 
 		<script src="./public/js/navigation.js" ></script>
 
-		<div id="home_container" class="container-fluid">
-			<div id="navMenuXS" class="visible-xs">
-				<navigation></navigation>
-				<script type="text/javascript">
-					$("#navMenuXS").find("nav").css("display", "block");
-					$("#navMenuXS").find("nav").css("float", "left");
-					$("#navMenuXS").find("nav").css("position", "absolute");
-				</script>
-			</div>
-			<div id="phone_headroom" class="visible-xs"></div>
-			<div id="container_profile_img" class="text-center">
-				<img id="img_profile" class="img-circle img-responsive" src="images/pictures/Profile_Evans.png" />
-			</div>
-			<div class="header text-center">
-				<h3>Andy Rose<br />Software Developer</h3>
-			</div>
-			<div id="navMenu" class="home-nav hidden-xs">
-				<navigation></navigation>
-				<script type="text/javascript">
-					setHomeNav();
-				</script>
-			</div>
-		</div>		
+		<navigation></navigation>
+		<home></home>
 	</body>
 </head>
