@@ -1,4 +1,3 @@
-
 appModule.factory('ExpandingBlockFactory', 
 	function() {
 		var ExpandingBlockFactory = {
