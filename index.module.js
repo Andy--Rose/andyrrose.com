@@ -1,4 +1,4 @@
-var appModule = angular.module('andyrrose.com', ['ngRoute', 'navigation', 'home', 'about', 'info']);
+var appModule = angular.module('andyrrose.com', ['ngRoute', 'navigation', 'home', 'about', 'info', 'work']);
 
 appModule.config(['$routeProvider', '$locationProvider', 
 	function($routeProvider, $locationProvider) {
@@ -11,6 +11,9 @@ appModule.config(['$routeProvider', '$locationProvider',
 			})
 			.when('/info', {
 				template: "<info></info>"
+			})
+			.when('/work', {
+				template: "<work></work>"
 			})
 			.otherwise('/');
 		$locationProvider.html5Mode(true);
