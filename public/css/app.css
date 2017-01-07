@@ -171,7 +171,7 @@ img, .img-responsive
 	font-weight:bold;
 }
 
-#project_video
+#carousel_video
 {
 	width:100%;
 	max-width:500px;
@@ -183,7 +183,7 @@ img, .img-responsive
 	z-index:25;
 }
 	
-.project_video_obj
+.carousel_video_obj
 {
 	margin:auto;
 	max-width:500px;
