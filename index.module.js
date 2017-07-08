@@ -1,5 +1,18 @@
-var appModule = angular.module('andyrrose.com', ['ngRoute', 'navigation', 'home', 'about', 'info', 'work', 'projects', 'papers']);
+var appModule = angular.module('andyrrose.com', [
+	'ngRoute', 
+	'navigation', 
+	'home', 
+	'about', 
+	'info', 
+	'work', 
+	'projects', 
+	'papers',
+	'lights'
+]);
 
+// Routing for the different pages
+// All pages go through the index, but the page is displayed differently by the URL
+// 
 appModule.config(['$routeProvider', '$locationProvider', 
 	function($routeProvider, $locationProvider) {
 		$routeProvider
@@ -21,7 +34,10 @@ appModule.config(['$routeProvider', '$locationProvider',
 			.when('/papers', {
 				template: "<papers></papers>"
 			})
-			.otherwise('/');
+			.when('/lights', {
+				template: "<lights></lights>"
+			})
+			.otherwise('/');		// Routes other paths to home. TODO: Create error page
 		$locationProvider.html5Mode(true);
 		// $locationProvider.hashPrefix('!');
 	}

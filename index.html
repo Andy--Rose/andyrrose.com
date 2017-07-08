@@ -54,8 +54,14 @@
 		<script src="./app/components/projects/projects.component.js"></script>
 		<script src="./app/components/papers/papers.module.js"></script>
 		<script src="./app/components/papers/papers.component.js"></script>
+		<script src="./app/components/lights/lights.module.js"></script>
+		<script src="./app/components/lights/lights.component.js"></script>
 
+		<!-- Navigation Object -->
 		<navigation></navigation>
+		
+		<!-- Page holder used for components -->
+		<!-- Every page loads from index and uses a different component based on the URL args -->
 		<div ng-view class="page-view"></div>
 	</body>
 </head>
