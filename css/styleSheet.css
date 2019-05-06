@@ -284,6 +284,12 @@ img, .img-responsive
 	margin:auto;
 }
 
+#btn_ttd
+{
+	background:url("../images/logos/ttdlogo.png") no-repeat scroll center;
+	background-size: 100%;
+}
+
 #btn_medallia
 {
 	background:url("../images/logos/MedalliaLogo.png") no-repeat scroll center;
