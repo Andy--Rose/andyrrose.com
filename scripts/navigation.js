@@ -30,7 +30,7 @@ function getNavigationHtml() {
 	'<li id="work"><a href="./Work.html">Work History</a></li>',
 	'<li id="projects"><a href="./Projects.html">Projects</a></li>',
 	'<li id="papers"><a href="./Papers.html">Papers</a></li>',
-	'<li id="lights"><a href="./Lights.html">Lights</a></li>',
+	// '<li id="lights"><a href="./Lights.html">Lights</a></li>',
 	'</ul>',
 	'</div>',
 	'</div>',
