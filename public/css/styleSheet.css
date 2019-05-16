@@ -38,7 +38,7 @@ img, .img-responsive
 }
 
 .home-bg {
-	background:url("../images/backgrounds/Snoqualmie.png") no-repeat center fixed;
+	background:url("../img/backgrounds/Snoqualmie.png") no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -87,7 +87,7 @@ img, .img-responsive
 	text-align:center;
 }
 
-.info-container
+/*.info-container
 {
 	width:150px;
 	height:150px;
@@ -104,7 +104,7 @@ img, .img-responsive
 	width:80%;
 	height:80%;
 	overflow:auto;
-}
+}*/
 
 .info-header
 {
@@ -114,7 +114,7 @@ img, .img-responsive
 
 .info-inner
 {
-	display:none;
+	/*display:none;*/
 	padding-left:15px;
 	padding-right:15px;
 	font-size:1.2em;
@@ -286,73 +286,73 @@ img, .img-responsive
 
 #btn_ttd
 {
-	background:url("../images/logos/ttdlogo.png") no-repeat scroll center;
+	background:url("../img/logos/ttdlogo.png") no-repeat scroll center;
 	background-size: 100%;
 }
 
 #btn_medallia
 {
-	background:url("../images/logos/MedalliaLogo.png") no-repeat scroll center;
+	background:url("../img/logos/MedalliaLogo.png") no-repeat scroll center;
 	background-size: 100%;
 }
 
 #btn_infospace, #btn_opsdash
 {
-	background:url("../images/logos/InfospaceLogo.png") no-repeat scroll center;
+	background:url("../img/logos/InfospaceLogo.png") no-repeat scroll center;
 	background-size: 100%;
 }
 
 #btn_uw, #btn_mrss
 {
-	background:url("../images/logos/uwLogo.png") no-repeat scroll center;
+	background:url("../img/logos/uwLogo.png") no-repeat scroll center;
 	background-size: 100%;
 }
 
 #btn_otherJobs
 {
-	background:url("../images/default/record.png") no-repeat scroll center;
+	background:url("../img/default/record.png") no-repeat scroll center;
 	background-size: 100%;
 }
 
 #btn_srproj
 {
-	background:url("../images/logos/cwuLogo.png") no-repeat scroll center;
+	background:url("../img/logos/cwuLogo.png") no-repeat scroll center;
 	background-size: 100%;
 }
 
 #btn_webski
 {
-	background:url("../images/logos/webbskiLogo.png") no-repeat scroll center;
+	background:url("../img/logos/webbskiLogo.png") no-repeat scroll center;
 	background-size: 100%;
 }
 
 #btn_chef
 {
-	background:url("../images/logos/chefLogo.png") no-repeat scroll center;
+	background:url("../img/logos/chefLogo.png") no-repeat scroll center;
 	background-size: 100%;
 }
 
 #btn_wavefront
 {
-	background:url("../images/logos/wavefrontLogo2.png") no-repeat scroll center;
+	background:url("../img/logos/wavefrontLogo2.png") no-repeat scroll center;
 	background-size: 100%;
 }
 
 #btn_docker
 {
-	background:url("../images/logos/dockerLogo.png") no-repeat scroll center;
+	background:url("../img/logos/dockerLogo.png") no-repeat scroll center;
 	background-size: 100%;
 }
 
 #btn_alertmgmt
 {
-	background:url("../images/logos/goIcon.png") no-repeat scroll center;
+	background:url("../img/logos/goIcon.png") no-repeat scroll center;
 	background-size: 100%;
 }
 
 #btn_iotController
 {
-	background:url("../images/logos/reactjsLogo.png") no-repeat scroll center;
+	background:url("../img/logos/reactjsLogo.png") no-repeat scroll center;
 	background-size: 100%;
 }
 

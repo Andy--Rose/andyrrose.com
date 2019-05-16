@@ -1,0 +1,82 @@
+<!-- TODO: Find out why the Home bg doesn't fill on my phone! -->
+<!-- TODO: Separate skills and contact info -->
+<!-- TODO: Use angular to animate transitions while still changing pages -->
+<!-- TODO: Create links to avoid having the '.html' in the URL and prevent case-sensitivity in URL -->
+<!DOCTYPE html>
+<html ng-app="andyrrose.com">
+	<script>
+	  history.pushState({}, "entry page", location.hash.substring(1));
+	</script>
+	<head>
+		<base href="/" />
+		<title>
+			Andy Rose - Software Developer
+		</title>
+		
+		<meta type="description" content="Andy Rose Professional Webpage" />
+		<meta type="content-type" content="text/html" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./public/css/app.css">
+		<link rel="stylesheet" href="./public/css/carousel.css">
+
+		<link rel="icon" type="image/icon" href="./public/img/default/icon.ico" />
+		<link rel="shortcut icon" type="image/icon" href="./public/img/default/icon.ico" />
+
+		<link rel="stylesheet" type="text/css" href="public/css/styleSheet.css" />
+
+		<!-- NG Material Package -->
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+
+<!-- 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+		<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+		<!-- <script src="scripts/navigation.js" ></script> -->
+	</head>
+
+	<body ng-controller="IndexController">
+		<script src="./node_modules/angular/angular.js"></script>
+		<script src="./node_modules/angular-route/angular-route.js"></script>
+		<script src="./node_modules/angular-material/angular-material.js"></script>
+		<script src="./node_modules/angular-animate/angular-animate.js"></script>
+		<script src="./node_modules/angular-messages/angular-messages.js"></script>
+		<script src="./node_modules/angular-aria/angular-aria.js"></script>
+		<script src="./node_modules/jquery/dist/jquery.js"></script>
+		<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+		<script src="./index.module.js"></script>
+
+		<!-- Import Custom Scripts -->
+		<script src="./public/js/navigation.js" ></script>
+		<script src="./public/js/expandingBlocks.js" ></script>
+		<script src="./public/js/carouselVideo.js" ></script>
+
+		<!-- Import Angular Components -->
+		<script src="./app/components/navigation/navigation.module.js"></script>
+		<script src="./app/components/navigation/navigation.component.js"></script> 
+ 		<script src="./app/components/home/home.module.js"></script>
+		<script src="./app/components/home/home.component.js"></script>
+		<script src="./app/components/about/about.module.js"></script>
+		<script src="./app/components/about/about.component.js"></script>
+		<script src="./app/components/info/info.module.js"></script>
+		<script src="./app/components/info/info.component.js"></script>
+		<script src="./app/components/work/work.module.js"></script>
+		<script src="./app/components/work/work.component.js"></script>
+		<script src="./app/components/projects/projects.module.js"></script>
+		<script src="./app/components/projects/projects.component.js"></script>
+		<script src="./app/components/papers/papers.module.js"></script>
+		<script src="./app/components/papers/papers.component.js"></script>
+		<script src="./app/components/lights/lights.module.js"></script>
+		<script src="./app/components/lights/lights.component.js"></script>
+
+		<!-- Navigation Object -->
+		<navigation></navigation>
+
+		<!-- Page holder used for components -->
+		<!-- Every page loads from index and uses a different component based on the URL args -->
+		<div ng-view class="page-view"></div>
+	</body>
+</html>

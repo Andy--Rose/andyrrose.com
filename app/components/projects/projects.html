@@ -1,0 +1,430 @@
+<!-- TODO: On small screen, make categories (i.e. Summary) collapsable -->
+<!-- TODO: Use angular to get rid of repeat code -->
+<div class="container-fluid container-main" ng-controller="ProjectsController">
+	<div id="project_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+		<ol class="carousel-indicators">
+			<li id="btn_iotController" data-target="#project_carousel" data-slide-to="0" class="active"></li>
+			<li id="btn_alertmgmt" data-target="#project_carousel" data-slide-to="1"></li>
+			<li id="btn_docker" data-target="#project_carousel" data-slide-to="2"></li>
+			<li id="btn_wavefront" data-target="#project_carousel" data-slide-to="3"></li>
+			<li id="btn_opsdash" data-target="#project_carousel" data-slide-to="4"></li>
+			<li id="btn_chef" data-target="#project_carousel" data-slide-to="5"></li>
+			<li id="btn_mrss" data-target="#project_carousel" data-slide-to="6"></li>
+			<li id="btn_srproj" data-target="#project_carousel" data-slide-to="7"></li>
+			<li id="btn_webski" data-target="#project_carousel" data-slide-to="8"></li>
+		</ol>
+	
+		<!-- Wrapper for slides -->
+		<div id="project_carousel_inner" class="carousel-inner" role="listbox">
+			<div id="iot_controller" class="item active">
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading"><h3>IoT Light Controller</h3></div>
+						<div class="panel-body">
+							Year: In Progress<br />
+							Type: Web Application<br />
+							Technologies: 
+							<span class="badge">ReactJS</span>
+							<span class="badge">react-bootstrap</span>
+							<span class="badge">JQuery</span>
+							<span class="badge">JSX/HTML</span>
+							<span class="badge">CSS3</span>
+							<span class="badge">Browserify</span>
+							<span class="badge">Babel</span>
+							<span class="badge">Axios</span>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Summary</div>
+						<div class="panel-body">
+							Application to control in-home LED installations. Currently, the front end UI 
+							skeleton is complete and I am working on configuring the back end. The plan is to send 
+							messages from the application to an in-home gateway (Raspberry PI) that sends signals 
+							over radio (nRF24L01) devices to instruct the nodes (Arduino) on what to do. For this,
+							I will utilize AWS IoT for secure sending of the messages to the gateway. The back end 
+							for the application will be handled by AWS API Gateway. The security for the 
+							application will be managed by AWS Cognito, which will require AWS permissions to 
+							control the lights in my home. Altogether, this application will run on zero servers. 
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Features</div>
+						<div class="panel-body">Choose device to send instructions</div>
+						<div class="panel-body">Power on/off lights from anywhere on any device</div>
+						<div class="panel-body">Select from any color and set a device</div>
+						<div class="panel-body">Select from presets and set a device</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Links</div>
+						<div class="panel-body"><a href="lights">Application</a></div>
+						<div class="panel-body"><a>Infrastructure Diagram (Coming Soon)</a></div>
+					</div>
+				</div>
+				<img class="img-responsive center-block" src="public/img/default/iot.png" />
+			</div>
+			
+			<div id="alert_mgmt" class="item active">
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading"><h3>Alert MGMT</h3></div>
+						<div class="panel-body">
+							Year: 2016<br />
+							Type: REST API<br />
+							Technologies: <span class="badge">Go</span>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Summary</div>
+						<div class="panel-body">
+							Created a stateless application to manage production alerting using 
+							templates. Application works by generating expected alerts using templates, 
+							getting existing alerts using API, and determining action based on comparison 
+							of existing alerts vs. expected alerts. Tagging features in monitoring application 
+							are referenced instead of managing a DB, allowing the application to be stateless. 
+							Deployed in AWS using ElasticBeanstalk.
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Features</div>
+						<div class="panel-body">Alert provisioning using templates</div>
+						<div class="panel-body">Alert management using templates and monitoring application state</div>
+						<div class="panel-body">Built to be used with any automation solutions</div>
+					</div>
+				</div>
+				<img class="img-responsive center-block" src="public/img/logos/goLogo.png" />
+			</div>
+
+			<div id="docker" class="item">
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading"><h3>Container Process MGMT</h3></div>
+						<div class="panel-body">
+							Year: 2016<br />
+							Type: Container-based CollectD Implementation<br />
+							Technologies: 
+								<span class="badge">Docker</span>
+								<span class="badge">Mesos</span>
+								<span class="badge">Aurora</span>
+								<span class="badge">CollectD</span>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Summary</div>
+						<div class="panel-body">
+							Configure CollectD to run on a server hosting a 3rd party application 
+							while avoiding "Zombie" processes.
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Features</div>
+						<div class="panel-body">Custom Docker init script to run multiple application PIDs from PID 1</div>
+						<div class="panel-body">If any child process failed, the container would be destroyed as expected</div>
+						<div class="panel-body">Modified entry point for container in Aurora job</div>
+						<div class="panel-body">Deployed and tested in Mesos cluster</div>
+					</div>
+				</div>
+				<img class="img-responsive center-block" src="public/img/logos/dockerMesosAuroraLogo.png" />
+			</div>
+
+			<div id="wavefront" class="item">
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading"><h3>Monitoring Migration</h3></div>
+						<div class="panel-body">
+							Year: 2016<br />
+							Type: Monitoring Migration<br />
+							Technologies: 
+								<span class="badge">CollectD</span>
+								<span class="badge">Wavefront</span>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Summary</div>
+						<div class="panel-body">
+							On a team of two tasked with migrating production monitors to a 
+							new application. This included analyzing, updating, converting, and configuring 
+							new monitors using CollectD from the existing Zabbix solution.
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Features</div>
+						<div class="panel-body">Investigate and set up proxy servers for new monitoring tool</div>
+						<div class="panel-body">Investigate and convert all existing metrics to the CollectD equivalent</div>
+						<div class="panel-body">Modify Chef and Puppet environments to run CollectD for metrics</div>
+						<div class="panel-body">Create alerts and dashboards</div>
+						<div class="panel-body">Document new process and update L1 support documents</div>
+					</div>
+				</div>
+				<img class="img-responsive center-block" src="public/img/logos/wavefrontLogo.png" />
+			</div>
+			
+			<div id="opsDash" class="item">
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading"><h3>Operations Dashboard</h3></div>
+						<div class="panel-body">
+							Year: 2015<br />
+							Type: Web Application<br />
+							Technologies: 
+								<span class="badge">C#</span>
+								<span class="badge">.NET MVC</span>
+								<span class="badge">Javascript</span>
+								<span class="badge">JQuery</span>
+								<span class="badge">HTML5</span>
+								<span class="badge">CSS3</span>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Summary</div>
+						<div class="panel-body">
+							Internal application bringing information from many applications
+							into one place. Eventually, features were also added, making it into a 
+							service. Examples of information include metrics, oncall schedules, alerting
+							configurations, and much more. There is even a sales interface tying operations 
+							with sales. I was responsible for about 80% of the code of the application.
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Features</div>
+						<div class="panel-body">Sales interface providing partner-specific operational data</div>
+						<div class="panel-body">Dashboards for metric visibility</div>
+						<div class="panel-body">Create and save custom dashboards using the interface</div>
+						<div class="panel-body">Ability to change configurations for other applications</div>
+						<div class="panel-body">"Pretty" visualization dashboards for upper mgmt</div>
+						<div class="panel-body">Quick mechanism to send Code Red notifications with a few clicks</div>
+						<div class="panel-body">Abstracted page creation so new pages only took a few lines of code</div>
+						<div class="panel-body">In-house anomaly detection logic</div>
+						<div class="panel-body">Works on mobile</div>
+						<div class="panel-body">API availability for queries from other applications</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Video Content</div>
+						<div class="panel-body">
+							<span class="bg-warning">Please excuse the terrible screen capturing software</span><br />
+							<span class="bg-warning">All content in videos is fake testing content.</span>
+						</div>
+						<div class="panel-body">
+							<button type="button" class="btn-primary" onclick="embedProjectVideo('public/content/videos/SalesOps')">
+								Sales Interactive Page
+							</button>
+						</div>
+						<div class="panel-body">
+							<button type="button" class="btn-primary" onclick="embedProjectVideo('public/content/videos/SalesDash')">
+								Sales Dashboard
+							</button>
+						</div>
+						<div class="panel-body">
+							<button type="button" class="btn-primary" onclick="embedProjectVideo('public/content/videos/CompanyDash')">
+								Company Dashboard
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="chef" class="item">
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading"><h3>Configuration Management</h3></div>
+						<div class="panel-body">
+							Year: 2013<br />
+							Type: Configuration Management and Automation<br />
+							Technologies: 
+								<span class="badge">Chef</span>
+								<span class="badge">Ruby</span>
+								<span class="badge">Powershell</span>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Summary</div>
+						<div class="panel-body">
+							Automates the provisioning and configuration of applications to 
+							servers in the cloud. Provides the ability for applications to be deployed 
+							consistently and repeatedly. As part of this project, we also used Chef Provisioning 
+							to automate the creation of infrastructure as code.
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Features</div>
+						<div class="panel-body">Provision infrastructure</div>
+						<div class="panel-body">Configure applications</div>
+						<div class="panel-body">Provides repeatable and immutable infrastructure</div>
+						<div class="panel-body">Resource cookbooks with providers that talk to APIs</div>
+					</div>
+				</div>
+				<img class="img-responsive center-block" src="public/img/logos/chefLogo.png" />
+			</div>
+			
+			<div id="mRSS" class="item">
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading"><h3>UWTV Internship Project</h3></div>
+						<div class="panel-body">
+							Year: 2011<br />
+							Type: End-to-End Application<br />
+							Technologies: 
+								<span class="badge">C#</span>
+								<span class="badge">SQL</span>
+								<span class="badge">MSI Package Installer</span>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Summary</div>
+						<div class="panel-body">
+							This system automates the process of generating MRSS 
+							code for media to connect it to the "Platform", which streams the media 
+							online. Work completed in Visual Studio using C# and utilizing an SQL 
+							database.
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Features</div>
+						<div class="panel-body">Built-in security for server and platform access</div>
+						<div class="panel-body">Dynamic UI features</div>
+						<div class="panel-body">User-defined macros</div>
+						<div class="panel-body">Built-in help interface</div>
+						<div class="panel-body">Built comprehensively for future expansion to other departments</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Resources</div>
+						<div class="panel-body">
+							<a href="public/content/documents/Mrss_Generator_Presentation.pdf" target="_blank">
+								<u>View Presentation</u>
+							</a>
+						</div>
+						<div class="panel-body">
+							<a href="public/content/documents/MRSSProjectWriteup.pdf" target="_blank">
+								<u>View Documentation</u>
+							</a>
+						</div>
+					</div>
+				</div>
+				<img class="img-responsive center-block" src="public/img/logos/mainLogo.gif" />
+			</div>
+
+			<div id="seniorProject" class="item">
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading"><h3>CWU Senior Project</h3></div>
+						<div class="panel-body">
+							Year: 2010<br />
+							Type: End-to-End Application<br />
+							Role: Team Lead<br />
+							Technologies: 
+								<span class="badge">C#</span>
+								<span class="badge">OLEDB</span>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Summary</div>
+						<div class="panel-body">
+							Project to create a program that organizes all 
+							equipment for Biology, Chemistry, and Geology departments at CWU. 
+							Created in Visual Studio with C# using a Microsoft Access Database 
+							with SQL (OLEDB).
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Features</div>
+						<div class="panel-body">4 search methods</div>
+						<div class="panel-body">Interactive map with blueprints</div>
+						<div class="panel-body">Map updated real-time with symbols</div>
+						<div class="panel-body">Equipment maintenance alert system and calendar</div>
+						<div class="panel-body">Barcode scanning and printing</div>
+						<div class="panel-body">Import capability from Microsoft Excel</div>
+						<div class="panel-body">Customized printouts</div>
+						<div class="panel-body">Access control uses school Active Directory</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Resources</div>
+						<div class="panel-body">
+							<a href="public/content/documents/SeniorProjectUserManual.pdf" target="_blank">
+								<u>View Documentation</u>
+							</a>
+						</div>
+					</div>
+				</div>
+				<img class="img-responsive center-block" src="public/img/logos/seniorProj.gif" />
+			</div>
+
+			<div id="webski" class="item">
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading"><h3>Webbski P.O.S. Application</h3></div>
+						<div class="panel-body">
+							Year: 2011<br />
+							Type: End-to-End Application<br />
+							Technologies: 
+								<span class="badge">C#</span>
+								<span class="badge">OLEDB</span>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Summary</div>
+						<div class="panel-body">
+							Point-of-sale application for the rental shop of a private ski 
+							school at Snoqualmie Pass. The program tracks all of 
+							the renters and equipment and handles all sales transactions.
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Features</div>
+						<div class="panel-body">Optimized for quickness on outdated hardware</div>
+						<div class="panel-body">Comprehensive search for customers and equipment</div>
+						<div class="panel-body">Fast selection-based search for equipment</div>
+						<div class="panel-body">Automatic backups</div>
+						<div class="panel-body">End-of-Day sales print and inventory check</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Resources</div>
+						<div class="panel-body">
+							<a href="public/content/documents/DBProjectPresentation.pdf" target="_blank">
+								<u>View Mid-Term Presentation</u>
+							</a>
+						</div>
+						<div class="panel-body">
+							<a href="public/content/documents/DBProjectWriteUp.pdf" target="_blank">
+								<u>View Documentation</u>
+							</a>
+						</div>
+					</div>
+				</div>
+				<img class="img-responsive center-block" src="public/img/logos/WebbskiLogo.gif" />
+			</div>
+		</div>
+		
+		<!-- Left and right controls -->
+		<a class="left carousel-control" href="#project_carousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#project_carousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	<div id="project_video" class="embed-responsive embed-responsive-16by9"></div>
+</div>
+<!-- <script type="text/javascript">
+	$(document).ready(function() {
+		$('.carousel-indicators li').click(hideVideo);
+		$('.carousel-control').click(hideVideo);
+	});
+
+	function embedProjectVideo(url) {
+		var html = '<video class="project_video_obj" controls autoplay>';
+		html += '<source src="' + url + '.mp4" type="video/mp4" />';
+		html += '<source src="' + url + '.ogg" type="video/ogg" />';
+		html += '</video>';
+		$('#project_video').show(0);
+		document.getElementById("project_video").innerHTML = html;
+		$('body,html').animate({
+			scrollTop: $('body')[0].scrollHeight
+		}, 500)
+		//vid_container.scrollTop = vid_container.scrollHeight;
+	}
+
+	function hideVideo() {
+		$('#project_video').hide();
+	}
+</script> -->

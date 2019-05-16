@@ -3,6 +3,10 @@
 ## Summary
 Personal website with project information, work history, and stuff about me.
 
+## Run On Desktop
+1. Run `npm install` (ensure `/usr/bin/npm install`)
+2. Run `npm start`
+
 ## Deploy
 1. Install AWS CLI from https://aws.amazon.com/cli/
 2. Set up profile "arose"

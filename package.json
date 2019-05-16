@@ -1,0 +1,29 @@
+{
+  "name": "andyrrose.com",
+  "version": "0.1.0",
+  "description": "Andy Rose Professional Webpage",
+  "repository": "https://github.com/Andy--Rose/andyrrose.com",
+  "scripts": {
+    "test": "mocha test --recursive --watch",
+    "start": "node ./main.js"
+  },
+  "author": "Andy Rose",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "angular": "~1.6.9",
+    "angular-animate": "^1.7.2",
+    "angular-aria": "^1.7.2",
+    "angular-route": "~1.5.0",
+    "angular-loader": "~1.5.0",
+    "angular-messages": "^1.7.2",
+    "angular-mocks": "~1.5.0",
+    "angular-material": "~1.1.0",
+    "bootstrap": "^3.3.7",
+    "browserify": "^13.1.1",
+    "chai": "^3.5.0",
+    "express": "^4.14.0",
+    "html5-boilerplate": "^5.3.0",
+    "jquery": "^3.1.1",
+    "mocha": "^3.2.0"
+  }
+}
