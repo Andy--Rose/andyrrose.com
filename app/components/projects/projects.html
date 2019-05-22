@@ -3,20 +3,92 @@
 <div class="container-fluid container-main" ng-controller="ProjectsController">
 	<div id="project_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
 		<ol class="carousel-indicators">
-			<li id="btn_iotController" data-target="#project_carousel" data-slide-to="0" class="active"></li>
-			<li id="btn_alertmgmt" data-target="#project_carousel" data-slide-to="1"></li>
-			<li id="btn_docker" data-target="#project_carousel" data-slide-to="2"></li>
-			<li id="btn_wavefront" data-target="#project_carousel" data-slide-to="3"></li>
-			<li id="btn_opsdash" data-target="#project_carousel" data-slide-to="4"></li>
-			<li id="btn_chef" data-target="#project_carousel" data-slide-to="5"></li>
-			<li id="btn_mrss" data-target="#project_carousel" data-slide-to="6"></li>
-			<li id="btn_srproj" data-target="#project_carousel" data-slide-to="7"></li>
-			<li id="btn_webski" data-target="#project_carousel" data-slide-to="8"></li>
+			<li id="btn_kpidash" data-target="#project_carousel" data-slide-to="0" class="active"></li>
+			<li id="btn_bootstrap" data-target="#project_carousel" data-slide-to="1"></li>
+			<li id="btn_iotController" data-target="#project_carousel" data-slide-to="2"></li>
+			<li id="btn_alertmgmt" data-target="#project_carousel" data-slide-to="3"></li>
+			<li id="btn_docker" data-target="#project_carousel" data-slide-to="4"></li>
+			<li id="btn_wavefront" data-target="#project_carousel" data-slide-to="5"></li>
+			<li id="btn_opsdash" data-target="#project_carousel" data-slide-to="6"></li>
+			<li id="btn_chef" data-target="#project_carousel" data-slide-to="7"></li>
+			<li id="btn_mrss" data-target="#project_carousel" data-slide-to="8"></li>
+			<li id="btn_srproj" data-target="#project_carousel" data-slide-to="9"></li>
+			<li id="btn_webski" data-target="#project_carousel" data-slide-to="10"></li>
 		</ol>
 	
 		<!-- Wrapper for slides -->
 		<div id="project_carousel_inner" class="carousel-inner" role="listbox">
 			<div id="iot_controller" class="item active">
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading"><h3>KPI Dashboard</h3></div>
+						<div class="panel-body">
+							Year: 2018<br />
+							Type: Web Application/Interface<br />
+							Technologies: 
+							<span class="badge">ReactJS</span>
+							<span class="badge">JavaScript</span>
+							<span class="badge">C#/.NET MVC</span>
+							<span class="badge">HTML5</span>
+							<span class="badge">CSS3</span>
+							<span class="badge">Grafana Libraries</span>
+							<span class="badge">API</span>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Summary</div>
+						<div class="panel-body">
+							Created a dashboard to manage KPI metrics from the different development teams. Metrics were combined from 5 different data sources using a C# REST API to collect the data. The dashboard was created as its own application using the ReactJS library.
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Features</div>
+						<div class="panel-body">Calls to the REST API were authenticated using API authentication cookie</div>
+						<div class="panel-body">API commands built to gather information and output it in standard format</div>
+						<div class="panel-body">Page state updated automatically when new data was available</div>
+						<div class="panel-body">Graphs provided static goals defined for each KPI</div>
+					</div>
+				</div>
+				<img class="img-responsive center-block" src="public/img/default/kpi.png" />
+			</div>
+			<div id="iot_controller" class="item">
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading"><h3>Server Bootstrap</h3></div>
+						<div class="panel-body">
+							Year: 2017<br />
+							Type: Scripting/Web Application<br />
+							Technologies: 
+							<span class="badge">Powershell</span>
+							<span class="badge">Bash</span>
+							<span class="badge">C#/.NET MVC</span>
+							<span class="badge">HTML5</span>
+							<span class="badge">CSS3</span>
+							<span class="badge">Angular</span>
+							<span class="badge">SignalR</span>
+							<span class="badge">AWS CLI</span>
+							<span class="badge">Active Directory</span>
+							<span class="badge">Chef</span>
+							<span class="badge">MySQL</span>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Summary</div>
+						<div class="panel-body">
+							Created scripts to bootstrap new nodes automatically in Windows and Linux environments. The process was created to work in AWS, Alibaba, and the Datacenters. The primary responsibility was to add new nodes to our management platform, active directory (Windows), and monitoring. Secondary responsibilities included providing detailed information about each instance to the management platform and standardizing on naming conventions. Informational messages are added to the database using API calls and provided to the web interface in real-time using SignalR.
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Features</div>
+						<div class="panel-body">Provides the same result on Windows and Linux instances/servers</div>
+						<div class="panel-body">Sends log status to an external dashboard to view real-time functionality</div>
+						<div class="panel-body">Sets the standard for instance/server naming</div>
+						<div class="panel-body">All methods for configuring servers approved by SOX</div>
+					</div>
+				</div>
+				<img class="img-responsive center-block" src="public/img/default/bootstrap.png" />
+			</div>
+			<div id="iot_controller" class="item">
 				<div class="panel-group">
 					<div class="panel panel-default">
 						<div class="panel-heading"><h3>IoT Light Controller</h3></div>

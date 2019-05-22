@@ -356,6 +356,18 @@ img, .img-responsive
 	background-size: 100%;
 }
 
+#btn_bootstrap
+{
+	background:url("../img/logos/boot.png") no-repeat scroll center;
+	background-size: 100%;
+}
+
+#btn_kpidash
+{
+	background:url("../img/logos/kpi.png") no-repeat scroll center;
+	background-size: 100%;
+}
+
 #frame-lights 
 {
 	position: absolute;
